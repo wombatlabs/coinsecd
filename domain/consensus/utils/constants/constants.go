@@ -4,7 +4,7 @@ import "math"
 
 const (
 	// BlockVersion represents the current block version
-	BlockVersion uint16 = 1
+	BlockVersion uint16 = 0
 
 	// MaxTransactionVersion is the current latest supported transaction version.
 	MaxTransactionVersion uint16 = 0
