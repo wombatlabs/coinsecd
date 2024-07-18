@@ -46,7 +46,7 @@ var genesisMerkleRoot = externalapi.NewDomainHashFromByteArray(&[externalapi.Dom
 // public transaction ledger for the main network.
 var genesisBlock = externalapi.DomainBlock{
 	Header: blockheader.NewImmutableBlockHeader(
-		1,
+		0,
 		[]externalapi.BlockLevelParents{},
 		genesisMerkleRoot,
 		&externalapi.DomainHash{},
