@@ -49,7 +49,7 @@ const (
 	// in block take longer)
 	defaultMergeSetSizeLimit                       = defaultGHOSTDAGK * 10
 	defaultSubsidyGenesisReward                    = 1 * constants.SompiPerCoinsec
-	defaultPreDeflationaryPhaseBaseSubsidy         = 9 * constants.SompiPerCoinsec
+	defaultPreDeflationaryPhaseBaseSubsidy         = 1 * constants.DefaultPreDeflationaryPhaseCurve
 	defaultDeflationaryPhaseBaseSubsidy            = 8 * constants.SompiPerCoinsec
 	defaultCoinbasePayloadScriptPublicKeyMaxLength = 150
 	// defaultDifficultyAdjustmentWindowSize is the number of blocks in a block's past used to calculate its difficulty
@@ -82,7 +82,9 @@ const (
 	// Half a year in seconds = 365.25 / 2 * 24 * 60 * 60 = 15778800
 	// The network was down for three days shortly after launch
 	// Three days in seconds = 3 * 24 * 60 * 60 = 259200
-	defaultDeflationaryPhaseDaaScore = 15778800 - 259200
+	
+	//defaultDeflationaryPhaseDaaScore = 15778800 - 259200
+	defaultDeflationaryPhaseDaaScore = 1
 
 	defaultMergeDepth = 3600
 )
