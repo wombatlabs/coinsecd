@@ -51,7 +51,7 @@ $ coinsecd
 ```
 
 ## Discord
-Join our discord server using the following link: https://discord.gg/DWzrk4ZwbA
+Join our discord server using the following link: https://discord.gg/
 
 ## License
 
