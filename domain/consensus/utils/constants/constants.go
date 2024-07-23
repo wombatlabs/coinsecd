@@ -13,10 +13,10 @@ const (
 	MaxScriptPublicKeyVersion uint16 = 0
 
 	// SompiPerCoinsec is the number of sompi in one coinsec (1 SEC).
-	SompiPerCoinsec = 1_000_000_000
+	SompiPerCoinsec = 100_000_000
 
 	// MaxSompi is the maximum transaction amount allowed in sompi.
-	MaxSompi = uint64(1_000_000_000_000 * SompiPerCoinsec)
+	MaxSompi = uint64(1_000_000_000 * SompiPerCoinsec)
 
 	// MaxTxInSequenceNum is the maximum sequence number the sequence field
 	// of a transaction input can be.
