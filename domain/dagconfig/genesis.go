@@ -89,7 +89,10 @@ var devnetGenesisHash = externalapi.NewDomainHashFromByteArray(&[externalapi.Dom
 // devnetGenesisMerkleRoot is the hash of the first transaction in the genesis block
 // for the devopment network.
 var devnetGenesisMerkleRoot = externalapi.NewDomainHashFromByteArray(&[externalapi.DomainHashSize]byte{
-	0x10e217ad08a7098a7136af92963591864f814d48281782cf1b2ff641426090fd,
+	0x58, 0xab, 0xf2, 0x03, 0x21, 0xd7, 0x07, 0x16,
+	0x16, 0x2b, 0x6b, 0xf8, 0xd9, 0xf5, 0x89, 0xca,
+	0x33, 0xae, 0x6e, 0x32, 0xb3, 0xb1, 0x9a, 0xbb,
+	0x7f, 0xa6, 0x5d, 0x11, 0x41, 0xa3, 0xf9, 0x4d,
 })
 
 // devnetGenesisBlock defines the genesis block of the block DAG which serves as the
