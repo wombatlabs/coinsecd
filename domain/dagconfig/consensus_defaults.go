@@ -48,7 +48,7 @@ const (
 	// (Higher values make pruning attacks easier by a constant, lower values make merging after a split or a spike
 	// in block take longer)
 	defaultMergeSetSizeLimit                       = defaultGHOSTDAGK * 10
-	defaultSubsidyGenesisReward                    = 1 * constants.SompiPerCoinsec
+	defaultSubsidyGenesisReward                    = 600000000 * constants.SompiPerCoinsec
 	defaultPreDeflationaryPhaseBaseSubsidy         = 9 * constants.SompiPerCoinsec
 	defaultDeflationaryPhaseBaseSubsidy            = 8 * constants.SompiPerCoinsec
 	defaultCoinbasePayloadScriptPublicKeyMaxLength = 150
