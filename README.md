@@ -1,5 +1,5 @@
 
-Coinsecd
+Coinsecd (SEC)
 ====
 
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://choosealicense.com/licenses/isc/)
