@@ -11,11 +11,11 @@ import (
 	"github.com/pkg/errors"
 )
 
-// FormatKas takes the amount of sompis as uint64, and returns amount of SEC with 8  decimal places
+// FormatKas takes the amount of sompis as uint64, and returns amount of SEC with 9 decimal places
 func FormatKas(amount uint64) string {
 	res := "                   "
 	if amount > 0 {
-		res = fmt.Sprintf("%19.8f", float64(amount)/constants.SompiPerCoinsec)
+		res = fmt.Sprintf("%18.9f", float64(amount)/constants.SompiPerCoinsec)
 	}
 	return res
 }
@@ -53,8 +53,8 @@ func KasToSompi(amount string) (uint64, error) {
 }
 
 func validateSECAmountFormat(amount string) error {
-	// Check whether it's an integer, or a float with max 8 digits
-	match, err := regexp.MatchString("^([1-9]\\d{0,11}|0)(\\.\\d{0,8})?$", amount)
+	// Check whether it's an integer, or a float with max 9 digits
+	match, err := regexp.MatchString("^([1-9]\\d{0,11}|0)(\\.\\d{0,9})?$", amount)
 
 	if !match {
 		return errors.Errorf("Invalid amount")
