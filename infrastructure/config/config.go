@@ -34,7 +34,7 @@ const (
 	defaultLogDirname          = "logs"
 	defaultLogFilename         = "coinsecd.log"
 	defaultErrLogFilename      = "coinsecd_err.log"
-	defaultTargetOutboundPeers = 8
+	defaultTargetOutboundPeers = 2
 	defaultMaxInboundPeers     = 117
 	defaultBanDuration         = time.Hour * 24
 	defaultBanThreshold        = 100
