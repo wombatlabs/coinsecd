@@ -32,7 +32,7 @@ func New(prefixBucket model.DBBucket, cacheSize int, preallocate bool) model.GHO
 
 // Stage stages the given blockGHOSTDAGData for the given blockHash
 func (gds *ghostdagDataStore) Stage(stagingArea *model.StagingArea, blockHash *externalapi.DomainHash,
-	blockGHOSTDAGData *externalapi.BlockGHOSTDAGData, isTrustedData bool) error {
+	blockGHOSTDAGData *externalapi.BlockGHOSTDAGData, isTrustedData bool) {
 
 	stagingShard := gds.stagingShard(stagingArea)
 
