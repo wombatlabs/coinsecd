@@ -47,7 +47,11 @@ func (gds *ghostdagDataStore) IsStaged(stagingArea *model.StagingArea) bool {
 func (gds *ghostdagDataStore) Get(dbContext model.DBReader, stagingArea *model.StagingArea, blockHash *externalapi.DomainHash, isTrustedData bool) (*externalapi.BlockGHOSTDAGData, error) {
 	stagingShard := gds.stagingShard(stagingArea)
 
-	key := newKey(blockHash, isTrustedData)
+	key, err := newKey(hash, isTrustedData)
+    if err != nil {
+        return nil, err
+    }
+	
 	if blockGHOSTDAGData, ok := stagingShard.toAdd[key]; ok {
 		return blockGHOSTDAGData, nil
 	}
