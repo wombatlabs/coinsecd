@@ -185,7 +185,10 @@ func (c *coinbaseManager) CalcBlockSubsidy(stagingArea *model.StagingArea, block
 	if err != nil {
 		return 0, err
 	}
-	if blockDaaScore < c.deflationaryPhaseDaaScore {
+	if blockDaaScore == c.defaultPremineScore {
+		return c.defaultSubsidyPremineReward, nil
+	}
+	if c.defaultPremineScore > blockDaaScore < c.deflationaryPhaseDaaScore {
 		return c.preDeflationaryPhaseBaseSubsidy, nil
 	}
 
