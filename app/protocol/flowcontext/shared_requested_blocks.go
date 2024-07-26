@@ -3,7 +3,7 @@ package flowcontext
 import (
 	"sync"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // SharedRequestedBlocks is a data structure that is shared between peers that

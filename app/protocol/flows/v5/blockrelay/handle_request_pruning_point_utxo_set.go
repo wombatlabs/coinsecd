@@ -2,14 +2,14 @@ package blockrelay
 
 import (
 	"errors"
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/protocol/common"
-	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
-	"github.com/wombatlabs/coinsecd/domain"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/protocol/common"
+	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
+	"github.com/coinsec/coinsecd/domain"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 )
 
 // HandleRequestPruningPointUTXOSetContext is the interface for the context needed for the HandleRequestPruningPointUTXOSet flow.

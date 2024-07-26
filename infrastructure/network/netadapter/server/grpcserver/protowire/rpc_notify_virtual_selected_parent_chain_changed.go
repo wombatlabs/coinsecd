@@ -1,7 +1,7 @@
 package protowire
 
 import (
-	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/appmessage"
 	"github.com/pkg/errors"
 )
 

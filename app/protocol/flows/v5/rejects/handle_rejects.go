@@ -1,9 +1,9 @@
 package rejects
 
 import (
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 )
 
 // HandleRejectsContext is the interface for the context needed for the HandleRejects flow.

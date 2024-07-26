@@ -1,7 +1,7 @@
 package flowcontext
 
 import (
-	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
+	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
 )
 
 // AddressManager returns the address manager associated to the flow context.

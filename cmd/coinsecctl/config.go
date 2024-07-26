@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
 	"github.com/jessevdk/go-flags"
+	"github.com/coinsec/coinsecd/infrastructure/config"
 	"github.com/pkg/errors"
 )
 

@@ -7,12 +7,11 @@ package txscript_test
 import (
 	"encoding/hex"
 	"fmt"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
-	"github.com/wombatlabs/coinsecd/util"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/util"
 )
 
 // This example demonstrates creating a script which pays to a coinsec address.

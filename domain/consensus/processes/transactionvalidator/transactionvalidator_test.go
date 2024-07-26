@@ -1,21 +1,21 @@
 package transactionvalidator_test
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus"
-	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
-	"github.com/wombatlabs/coinsecd/util"
 	"github.com/kaspanet/go-secp256k1"
+	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/coinsec/coinsecd/util"
 
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
 	"github.com/pkg/errors"
 )
 

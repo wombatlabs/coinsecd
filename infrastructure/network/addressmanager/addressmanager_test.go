@@ -9,10 +9,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database/ldb"
-	"github.com/wombatlabs/coinsecd/util/mstime"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/infrastructure/db/database/ldb"
+	"github.com/coinsec/coinsecd/util/mstime"
 )
 
 func newAddressManagerForTest(t *testing.T, testName string) (addressManager *AddressManager, teardown func()) {

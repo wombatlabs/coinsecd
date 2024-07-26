@@ -5,8 +5,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/wombatlabs/coinsecd/stability-tests/common"
-	"github.com/wombatlabs/coinsecd/stability-tests/common/mine"
+	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/coinsec/coinsecd/stability-tests/common/mine"
 	"github.com/pkg/errors"
 )
 

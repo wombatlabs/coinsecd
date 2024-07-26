@@ -27,8 +27,8 @@ variable (either directly, or hidden in a library call).
 		"fmt"
 		"log"
 
-		"github.com/wombatlabs/coinsecd/util"
-		"github.com/wombatlabs/coinsecd/domain/dagconfig"
+		"github.com/coinsec/coinsecd/util"
+		"github.com/coinsec/coinsecd/domain/dagconfig"
 	)
 
 	var testnet = flag.Bool("testnet", false, "operate on the testnet Coinsec network")

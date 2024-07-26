@@ -1,9 +1,8 @@
 package appmessage
 
 import (
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 	"math/big"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // MsgBlockWithTrustedData represents a coinsec BlockWithTrustedData message

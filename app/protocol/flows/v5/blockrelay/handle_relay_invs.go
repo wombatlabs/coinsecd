@@ -1,23 +1,20 @@
 package blockrelay
 
 import (
-	"time"
-
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/protocol/common"
+	"github.com/coinsec/coinsecd/app/protocol/flowcontext"
+	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
+	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
+	"github.com/coinsec/coinsecd/domain"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/hashset"
+	"github.com/coinsec/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
-
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/protocol/common"
-	"github.com/wombatlabs/coinsecd/app/protocol/flowcontext"
-	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
-	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
-	"github.com/wombatlabs/coinsecd/domain"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashset"
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 )
 
 // orphanResolutionRange is the maximum amount of blockLocator hashes
@@ -73,16 +70,6 @@ func HandleRelayInvs(context RelayInvsContext, incomingRoute *router.Route, outg
 }
 
 func (flow *handleRelayInvsFlow) start() error {
-	if time.Now().Before(flow.Config().LaunchDate) {
-		log.Infof("No block relay available before the launch date of the network")
-		log.Infof("Waiting for the launch date of the network: %s", flow.Config().LaunchDate)
-	}
-
-	select {
-	case <-time.After(time.Until(flow.Config().LaunchDate)):
-		log.Infof("Launch date of the network reached. Starting block relay")
-	}
-
 	for {
 		log.Debugf("Waiting for inv")
 		inv, err := flow.readInv()

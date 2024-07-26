@@ -1,8 +1,8 @@
 package syncmanager
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 func (sm *syncManager) syncInfo(stagingArea *model.StagingArea) (*externalapi.SyncInfo, error) {

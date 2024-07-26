@@ -5,9 +5,9 @@ import (
 	"math/rand"
 	"sort"
 
-	consensusexternalapi "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	consensusexternalapi "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
 )
 
 const (

@@ -1,7 +1,7 @@
 package domain
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 	"math"
 )

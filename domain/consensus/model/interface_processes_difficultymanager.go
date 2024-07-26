@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // DifficultyManager provides a method to resolve the

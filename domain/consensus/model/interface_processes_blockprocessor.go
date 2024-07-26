@@ -1,6 +1,6 @@
 package model
 
-import "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+import "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 
 // BlockProcessor is responsible for processing incoming blocks
 type BlockProcessor interface {

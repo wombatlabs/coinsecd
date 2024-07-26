@@ -2,9 +2,8 @@ package pow
 
 import (
 	"encoding/binary"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 	"math/bits"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 type xoShiRo256PlusPlus struct {

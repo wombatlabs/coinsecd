@@ -3,11 +3,11 @@ package mempool
 import (
 	"time"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
 
-	"github.com/wombatlabs/coinsecd/util"
+	"github.com/coinsec/coinsecd/util"
 
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
 )
 
 const (

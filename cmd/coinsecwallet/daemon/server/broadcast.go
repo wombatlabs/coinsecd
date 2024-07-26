@@ -4,12 +4,13 @@ import (
 	"context"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/rpcclient"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/infrastructure/network/rpcclient"
 	"github.com/pkg/errors"
 )
 
@@ -55,16 +56,12 @@ func (s *server) broadcast(transactions [][]byte, isDomain bool) ([]string, erro
 		}
 	}
 
-	err = s.refreshUTXOs()
-	if err != nil {
-		return nil, err
-	}
-
+	s.forceSync()
 	return txIDs, nil
 }
 
 func sendTransaction(client *rpcclient.RPCClient, tx *externalapi.DomainTransaction) (string, error) {
-	submitTransactionResponse, err := client.SubmitTransaction(appmessage.DomainTransactionToRPCTransaction(tx), false)
+	submitTransactionResponse, err := client.SubmitTransaction(appmessage.DomainTransactionToRPCTransaction(tx), consensushashing.TransactionID(tx).String(), false)
 	if err != nil {
 		return "", errors.Wrapf(err, "error submitting transaction")
 	}

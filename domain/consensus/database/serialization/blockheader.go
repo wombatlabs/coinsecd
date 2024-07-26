@@ -1,12 +1,11 @@
 package serialization
 
 import (
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/blockheader"
+	"github.com/pkg/errors"
 	"math"
 	"math/big"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/blockheader"
-	"github.com/pkg/errors"
 )
 
 // DomainBlockHeaderToDbBlockHeader converts BlockHeader to DbBlockHeader

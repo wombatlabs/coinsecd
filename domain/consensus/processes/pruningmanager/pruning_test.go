@@ -2,19 +2,18 @@ package pruningmanager_test
 
 import (
 	"encoding/json"
+	"github.com/coinsec/coinsecd/infrastructure/db/database"
 	"os"
 	"path/filepath"
 	"testing"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
 )
 
 type jsonBlock struct {

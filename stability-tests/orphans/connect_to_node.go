@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/standalone"
+	"github.com/coinsec/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/standalone"
 )
 
 func connectToNode() *standalone.Routes {

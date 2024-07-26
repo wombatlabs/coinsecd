@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/wombatlabs/coinsecd/stability-tests/common"
-	"github.com/wombatlabs/coinsecd/util/profiling"
+	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/coinsec/coinsecd/util/profiling"
 )
 
 func main() {

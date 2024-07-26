@@ -5,15 +5,15 @@
 package appmessage
 
 import (
-	"github.com/wombatlabs/coinsecd/util/mstime"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/coinsec/coinsecd/util/mstime"
 	"math"
 	"reflect"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // TestBlock tests the MsgBlock API.

@@ -1,9 +1,8 @@
 package serialization
 
 import (
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 	"testing"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // TestBlueAnticoneSizesSize tests that no data can be loss when converting externalapi.KType to the corresponding type in

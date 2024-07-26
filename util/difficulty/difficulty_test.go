@@ -2,14 +2,14 @@ package difficulty_test
 
 import (
 	"fmt"
-	"github.com/wombatlabs/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/domain/consensus"
 	"math"
 	"math/big"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
-	"github.com/wombatlabs/coinsecd/util/difficulty"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/util/difficulty"
 )
 
 func TestGetHashrateString(t *testing.T) {

@@ -1,10 +1,10 @@
 package blockrelay
 
 import (
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/protocol/common"
-	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/protocol/common"
+	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 func (flow *handleRelayInvsFlow) sendGetBlockLocator(highHash *externalapi.DomainHash, limit uint32) error {

@@ -1,9 +1,8 @@
 package integration
 
 import (
+	"github.com/coinsec/coinsecd/app/appmessage"
 	"testing"
-
-	"github.com/wombatlabs/coinsecd/app/appmessage"
 )
 
 func TestVirtualSelectedParentBlueScoreAndVirtualDAAScore(t *testing.T) {

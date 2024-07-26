@@ -1,18 +1,18 @@
 package integration
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/mining"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/mining"
 	"math/rand"
 	"reflect"
 	"sync"
 	"testing"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/appmessage"
 )
 
 func TestIBD(t *testing.T) {

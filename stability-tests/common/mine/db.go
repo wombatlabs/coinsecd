@@ -3,9 +3,9 @@ package mine
 import (
 	"path/filepath"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database/ldb"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/infrastructure/db/database"
+	"github.com/coinsec/coinsecd/infrastructure/db/database/ldb"
 )
 
 const leveldbCacheSizeMiB = 256

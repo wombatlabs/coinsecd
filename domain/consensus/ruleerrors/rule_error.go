@@ -3,8 +3,8 @@ package ruleerrors
 import (
 	"fmt"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
 	"github.com/pkg/errors"
 )
 

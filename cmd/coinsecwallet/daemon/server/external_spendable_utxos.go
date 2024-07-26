@@ -3,10 +3,10 @@ package server
 import (
 	"context"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/wombatlabs/coinsecd/util"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/coinsec/coinsecd/util"
 )
 
 func (s *server) GetExternalSpendableUTXOs(_ context.Context, request *pb.GetExternalSpendableUTXOsRequest) (*pb.GetExternalSpendableUTXOsResponse, error) {

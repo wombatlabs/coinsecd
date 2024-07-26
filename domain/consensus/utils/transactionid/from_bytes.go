@@ -1,7 +1,7 @@
 package transactionid
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // FromBytes creates a DomainTransactionID from the given byte slice

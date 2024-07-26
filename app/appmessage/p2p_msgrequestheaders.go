@@ -5,7 +5,7 @@
 package appmessage
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // MsgRequestHeaders implements the Message interface and represents a coinsec

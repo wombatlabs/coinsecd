@@ -1,11 +1,11 @@
 package blockwindowheapslicestore
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/lrucachehashandwindowsizetoblockghostdagdatahashpairs"
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
-	"github.com/wombatlabs/coinsecd/util/staging"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/lrucachehashandwindowsizetoblockghostdagdatahashpairs"
+	"github.com/coinsec/coinsecd/infrastructure/db/database"
+	"github.com/coinsec/coinsecd/util/staging"
 	"github.com/pkg/errors"
 )
 

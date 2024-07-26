@@ -2,16 +2,15 @@ package consensusstatemanager_test
 
 import (
 	"fmt"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/testapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/testapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
+	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
 )
 
 func TestAddBlockBetweenResolveVirtualCalls(t *testing.T) {

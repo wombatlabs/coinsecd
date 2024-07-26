@@ -1,8 +1,8 @@
 package testapi
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // TestBlockBuilder adds to the main BlockBuilder methods required by tests

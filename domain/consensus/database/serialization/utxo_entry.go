@@ -1,11 +1,10 @@
 package serialization
 
 import (
-	"math"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
 	"github.com/pkg/errors"
+	"math"
 )
 
 // ScriptPublicKeyToDBScriptPublicKey converts ScriptPublicKey to DBScriptPublicKey

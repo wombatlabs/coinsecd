@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/client"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/utils"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/client"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/utils"
 )
 
 func createUnsignedTransaction(conf *createUnsignedTransactionConfig) error {
@@ -20,7 +20,7 @@ func createUnsignedTransaction(conf *createUnsignedTransactionConfig) error {
 	ctx, cancel := context.WithTimeout(context.Background(), daemonTimeout)
 	defer cancel()
 
-	sendAmountSompi, err := utils.KasToSompi(conf.SendAmount)
+	sendAmountSompi, err := utils.SecToSompi(conf.SendAmount)
 
 	if err != nil {
 		return err

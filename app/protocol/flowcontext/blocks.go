@@ -3,14 +3,14 @@ package flowcontext
 import (
 	"time"
 
-	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
-	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
+	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
 	"github.com/pkg/errors"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/appmessage"
 )
 
 // OnNewBlock updates the mempool after a new block arrival, and

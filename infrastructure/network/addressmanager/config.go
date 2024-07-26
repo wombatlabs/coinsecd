@@ -3,7 +3,7 @@ package addressmanager
 import (
 	"net"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/infrastructure/config"
 )
 
 // Config is a descriptor which specifies the AddressManager instance configuration.

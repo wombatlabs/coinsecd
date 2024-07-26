@@ -1,8 +1,8 @@
 package reachabilitymanager
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // IsDAGAncestorOf returns true if blockHashA is an ancestor of

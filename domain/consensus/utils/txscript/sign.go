@@ -5,13 +5,13 @@
 package txscript
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
 	"github.com/kaspanet/go-secp256k1"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
 	"github.com/pkg/errors"
 
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
-	"github.com/wombatlabs/coinsecd/util"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/util"
 )
 
 // RawTxInSignature returns the serialized Schnorr signature for the input idx of

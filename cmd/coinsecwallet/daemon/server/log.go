@@ -5,10 +5,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/wombatlabs/coinsecd/util"
+	"github.com/coinsec/coinsecd/util"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
-	"github.com/wombatlabs/coinsecd/util/panics"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/util/panics"
 )
 
 var (

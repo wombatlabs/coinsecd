@@ -8,14 +8,14 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/util/network"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/util/network"
 
 	"github.com/pkg/errors"
 
-	"github.com/wombatlabs/coinsecd/util"
+	"github.com/coinsec/coinsecd/util"
 )
 
 // These variables are the DAG proof-of-work limit parameters for each default
@@ -175,7 +175,7 @@ type Params struct {
 	// CoinbasePayloadScriptPublicKeyMaxLength is the maximum allowed script public key in the coinbase's payload
 	CoinbasePayloadScriptPublicKeyMaxLength uint8
 
-	// PruningProofM is the 'm' constant in the pruning proof. For more details see: https://github.com/coinsecnet/research/issues/3
+	// PruningProofM is the 'm' constant in the pruning proof. For more details see: https://github.com/kaspanet/research/issues/3
 	PruningProofM uint64
 
 	// DeflationaryPhaseDaaScore is the DAA score after which the monetary policy switches
@@ -211,9 +211,11 @@ var MainnetParams = Params{
 	K:           defaultGHOSTDAGK,
 	Name:        "coinsec-mainnet",
 	Net:         appmessage.Mainnet,
-	RPCPort:     "38138",
-	DefaultPort: "38139",
-	DNSSeeds: []string{},
+	RPCPort:     "17110",
+	DefaultPort: "17111",
+	DNSSeeds: []string{
+		"",
+	},
 
 	// DAG parameters
 	GenesisBlock:                    &genesisBlock,
@@ -276,9 +278,11 @@ var TestnetParams = Params{
 	K:           defaultGHOSTDAGK,
 	Name:        "coinsec-testnet-10",
 	Net:         appmessage.Testnet,
-	RPCPort:     "16210",
-	DefaultPort: "16211",
-	DNSSeeds: []string{},
+	RPCPort:     "17210",
+	DefaultPort: "17211",
+	DNSSeeds: []string{
+		"",
+	},
 
 	// DAG parameters
 	GenesisBlock:                    &testnetGenesisBlock,
@@ -344,8 +348,8 @@ var SimnetParams = Params{
 	K:           defaultGHOSTDAGK,
 	Name:        "coinsec-simnet",
 	Net:         appmessage.Simnet,
-	RPCPort:     "16510",
-	DefaultPort: "16511",
+	RPCPort:     "17510",
+	DefaultPort: "17511",
 	DNSSeeds:    []string{}, // NOTE: There must NOT be any seeds.
 
 	// DAG parameters
@@ -404,8 +408,8 @@ var DevnetParams = Params{
 	K:           defaultGHOSTDAGK,
 	Name:        "coinsec-devnet",
 	Net:         appmessage.Devnet,
-	RPCPort:     "16610",
-	DefaultPort: "16611",
+	RPCPort:     "17610",
+	DefaultPort: "17611",
 	DNSSeeds:    []string{}, // NOTE: There must NOT be any seeds.
 
 	// DAG parameters

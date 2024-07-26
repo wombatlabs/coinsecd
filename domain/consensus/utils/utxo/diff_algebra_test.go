@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionid"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionid"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 func (mud *mutableUTXODiff) equal(other *mutableUTXODiff) bool {

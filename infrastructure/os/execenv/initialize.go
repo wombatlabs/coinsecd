@@ -5,7 +5,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/os/limits"
+	"github.com/coinsec/coinsecd/infrastructure/os/limits"
 )
 
 // Initialize initializes the execution environment required to run coinsecd

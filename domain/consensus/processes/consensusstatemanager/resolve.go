@@ -1,13 +1,12 @@
 package consensusstatemanager
 
 import (
-	"sort"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
-	"github.com/wombatlabs/coinsecd/util/staging"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/util/staging"
 	"github.com/pkg/errors"
+	"sort"
 )
 
 // tipsInDecreasingGHOSTDAGParentSelectionOrder returns the current DAG tips in decreasing parent selection order.

@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/keys"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/keys"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
 	"github.com/pkg/errors"
 )
 

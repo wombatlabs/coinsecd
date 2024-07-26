@@ -1,6 +1,6 @@
 package lrucachehashandwindowsizetoblockghostdagdatahashpairs
 
-import "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+import "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 
 type lruKey struct {
 	blockHash  externalapi.DomainHash

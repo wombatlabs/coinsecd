@@ -4,14 +4,14 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/wombatlabs/coinsecd/util/mstime"
+	"github.com/coinsec/coinsecd/util/mstime"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/database"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
-	"github.com/wombatlabs/coinsecd/util/staging"
+	"github.com/coinsec/coinsecd/domain/consensus/database"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/util/staging"
 	"github.com/pkg/errors"
 )
 

@@ -1,12 +1,12 @@
 package handshake
 
 import (
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/protocol/common"
-	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
-	"github.com/wombatlabs/coinsecd/version"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/protocol/common"
+	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/version"
 	"github.com/pkg/errors"
 )
 

@@ -1,8 +1,8 @@
 package syncmanager
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -151,7 +151,7 @@ func (sm *syncManager) missingBlockBodyHashes(stagingArea *model.StagingArea, hi
 			// In these cases - return an empty list of blocks to sync
 			return []*externalapi.DomainHash{}, nil
 		}
-		// TODO: Once block children are fixed (https://github.com/wombatlabs/coinsecd/issues/1499),
+		// TODO: Once block children are fixed (https://github.com/coinsec/coinsecd/issues/1499),
 		// this error should be returned rather the logged
 		log.Errorf("No header-only blocks between %s and %s",
 			lowHash, highHash)

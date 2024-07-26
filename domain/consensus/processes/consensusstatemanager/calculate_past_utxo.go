@@ -1,15 +1,15 @@
 package consensusstatemanager
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
 	"github.com/pkg/errors"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionhelper"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionhelper"
 )
 
 func (csm *consensusStateManager) CalculatePastUTXOAndAcceptanceData(stagingArea *model.StagingArea,

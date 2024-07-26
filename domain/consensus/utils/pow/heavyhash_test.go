@@ -3,11 +3,10 @@ package pow
 import (
 	"bytes"
 	"encoding/hex"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/hashes"
 	"math/rand"
 	"testing"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashes"
 )
 
 func BenchmarkMatrix_HeavyHash(b *testing.B) {

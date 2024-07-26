@@ -2,19 +2,18 @@ package blockvalidator_test
 
 import (
 	"errors"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
 	"math/big"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/blockheader"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/blockheader"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
+	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
 )
 
 func TestValidateMedianTime(t *testing.T) {

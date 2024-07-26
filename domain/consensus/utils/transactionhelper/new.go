@@ -1,8 +1,8 @@
 package transactionhelper
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
 )
 
 // NewSubnetworkTransaction returns a new trsnactions in the specified subnetwork with specified gas and payload

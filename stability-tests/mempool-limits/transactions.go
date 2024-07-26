@@ -5,19 +5,19 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionhelper"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
-	utxopkg "github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/rpcclient"
-	"github.com/wombatlabs/coinsecd/stability-tests/common/mine"
-	"github.com/wombatlabs/coinsecd/util"
 	"github.com/kaspanet/go-secp256k1"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionhelper"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
+	utxopkg "github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/infrastructure/network/rpcclient"
+	"github.com/coinsec/coinsecd/stability-tests/common/mine"
+	"github.com/coinsec/coinsecd/util"
 )
 
 const (
@@ -86,7 +86,7 @@ func submitAnAmountOfTransactionsToTheMempool(t *testing.T, rpcClient *rpcclient
 
 	for i, transaction := range transactions {
 		rpcTransaction := appmessage.DomainTransactionToRPCTransaction(transaction)
-		_, err := rpcClient.SubmitTransaction(rpcTransaction, false)
+		_, err := rpcClient.SubmitTransaction(rpcTransaction, consensushashing.TransactionID(transaction).String(), false)
 		if err != nil {
 			if ignoreOrphanRejects && strings.Contains(err.Error(), "orphan") {
 				continue

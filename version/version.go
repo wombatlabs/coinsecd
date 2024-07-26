@@ -9,13 +9,13 @@ import (
 const validCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-"
 
 const (
-	appMajor uint = 1
-	appMinor uint = 0
-	appPatch uint = 0
+	appMajor uint = 0
+	appMinor uint = 12
+	appPatch uint = 17
 )
 
 // appBuild is defined as a variable so it can be overridden during the build
-// process with '-ldflags "-X github.com/wombatlabs/coinsecd/version.appBuild=foo"' if needed.
+// process with '-ldflags "-X github.com/coinsec/coinsecd/version.appBuild=foo"' if needed.
 // It MUST only contain characters from validCharacters.
 var appBuild string
 

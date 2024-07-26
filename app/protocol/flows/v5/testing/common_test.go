@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
+	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
 	"github.com/pkg/errors"
 )
 

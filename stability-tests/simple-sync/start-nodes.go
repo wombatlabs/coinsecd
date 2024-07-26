@@ -7,8 +7,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/stability-tests/common"
-	"github.com/wombatlabs/coinsecd/util/panics"
+	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/coinsec/coinsecd/util/panics"
 	"github.com/pkg/errors"
 )
 
@@ -36,7 +36,7 @@ func startNodes() (teardown func(), err error) {
 	}
 	log.Infof("SYNCED datadir: %s", syncedDataDir)
 
-	syncerCmd, err := common.StartCmd("SECPAD-SYNCER",
+	syncerCmd, err := common.StartCmd("COINSECD-SYNCER",
 		"coinsecd",
 		common.NetworkCliArgumentFromNetParams(activeConfig().NetParams()),
 		"--appdir", syncerDataDir,
@@ -50,7 +50,7 @@ func startNodes() (teardown func(), err error) {
 		return nil, err
 	}
 
-	syncedCmd, err := common.StartCmd("SECPAD-SYNCED",
+	syncedCmd, err := common.StartCmd("COINSECD-SYNCED",
 		"coinsecd",
 		common.NetworkCliArgumentFromNetParams(activeConfig().NetParams()),
 		"--appdir", syncedDataDir,

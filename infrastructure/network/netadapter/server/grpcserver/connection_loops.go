@@ -1,20 +1,19 @@
 package grpcserver
 
 import (
+	"github.com/davecgh/go-spew/spew"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
 	"io"
 	"os"
 	"strconv"
 	"sync"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
-	"github.com/davecgh/go-spew/spew"
-
-	routerpkg "github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	routerpkg "github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server/grpcserver/protowire"
 )
 
 func (c *gRPCConnection) connectionLoops() error {
@@ -45,7 +44,7 @@ func (c *gRPCConnection) sendLoop() error {
 		}
 
 		blockDelayOnce.Do(func() {
-			experimentalDelayEnv := os.Getenv("SECPA_EXPERIMENTAL_DELAY")
+			experimentalDelayEnv := os.Getenv("COINSEC_EXPERIMENTAL_DELAY")
 			if experimentalDelayEnv != "" {
 				blockDelay, err = strconv.Atoi(experimentalDelayEnv)
 				if err != nil {

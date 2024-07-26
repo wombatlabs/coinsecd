@@ -1,7 +1,7 @@
 package appmessage
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // MsgIBDBlockLocatorHighestHash represents a coinsec BlockLocatorHighestHash message

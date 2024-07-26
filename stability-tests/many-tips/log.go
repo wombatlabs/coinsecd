@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
-	"github.com/wombatlabs/coinsecd/stability-tests/common"
-	"github.com/wombatlabs/coinsecd/util/panics"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/coinsec/coinsecd/util/panics"
 	"os"
 )
 

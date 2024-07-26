@@ -1,16 +1,16 @@
 package testing
 
 import (
-	"github.com/wombatlabs/coinsecd/app/protocol/flows/v5/addressexchange"
+	"github.com/coinsec/coinsecd/app/protocol/flows/v5/addressexchange"
 	"testing"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
-	"github.com/wombatlabs/coinsecd/domain/consensus"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
+	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
+	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 )
 
 type fakeReceiveAddressesContext struct{}

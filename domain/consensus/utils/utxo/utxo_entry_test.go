@@ -1,9 +1,8 @@
 package utxo
 
 import (
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 	"testing"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 func TestUTXOEntry_Equal(t *testing.T) {

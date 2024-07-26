@@ -5,9 +5,9 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 
-	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
+	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
 )
 
 var (

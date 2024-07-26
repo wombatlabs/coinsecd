@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
+	"github.com/coinsec/coinsecd/infrastructure/db/database"
 )
 
 func TestTransactionCloseErrors(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"unicode"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server/grpcserver/protowire"
 )
 
 // protobuf generates the command types with two types:

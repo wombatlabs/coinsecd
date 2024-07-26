@@ -1,10 +1,9 @@
 package protowire
 
 import (
-	"math"
-
-	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/appmessage"
 	"github.com/pkg/errors"
+	"math"
 )
 
 func (x *CoinsecdMessage_SubmitBlockRequest) toAppMessage() (appmessage.Message, error) {

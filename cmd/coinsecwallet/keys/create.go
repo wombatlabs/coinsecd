@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/utils"
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/utils"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
 	"github.com/pkg/errors"
 	"github.com/tyler-smith/go-bip39"
 )

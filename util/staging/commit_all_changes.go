@@ -1,8 +1,8 @@
 package staging
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
 	"sync/atomic"
 )
 

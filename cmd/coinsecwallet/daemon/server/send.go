@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
 )
 
 func (s *server) Send(_ context.Context, request *pb.SendRequest) (*pb.SendResponse, error) {

@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/app/protocol/common"
+	"github.com/coinsec/coinsecd/app/protocol/common"
 	"github.com/pkg/errors"
 )
 

@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // TestBlockHeader tests the MsgBlockHeader API.

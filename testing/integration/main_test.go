@@ -1,7 +1,7 @@
 package integration
 
 import (
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
 	"os"
 	"testing"
 )

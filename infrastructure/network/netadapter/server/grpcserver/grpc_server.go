@@ -3,8 +3,8 @@ package grpcserver
 import (
 	"context"
 	"fmt"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server"
-	"github.com/wombatlabs/coinsecd/util/panics"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server"
+	"github.com/coinsec/coinsecd/util/panics"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/peer"

@@ -1,10 +1,10 @@
 package utxoindex
 
 import (
-	"github.com/wombatlabs/coinsecd/domain"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/domain"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/infrastructure/db/database"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
 	"sync"
 )
 

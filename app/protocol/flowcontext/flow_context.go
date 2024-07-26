@@ -4,18 +4,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/util/mstime"
+	"github.com/coinsec/coinsecd/util/mstime"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 
-	"github.com/wombatlabs/coinsecd/domain"
+	"github.com/coinsec/coinsecd/domain"
 
-	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/connmanager"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/id"
+	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
+	"github.com/coinsec/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
+	"github.com/coinsec/coinsecd/infrastructure/network/connmanager"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/id"
 )
 
 // OnNewBlockTemplateHandler is a handler function that's triggered when a new block template is available

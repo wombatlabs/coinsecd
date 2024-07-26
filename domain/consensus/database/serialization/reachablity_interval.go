@@ -1,7 +1,7 @@
 package serialization
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
 )
 
 func reachablityIntervalToDBReachablityInterval(reachabilityInterval *model.ReachabilityInterval) *DbReachabilityInterval {

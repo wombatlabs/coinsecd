@@ -7,7 +7,7 @@ package addressmanager
 import (
 	"net"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/appmessage"
 )
 
 var (

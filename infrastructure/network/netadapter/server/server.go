@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 )
 
 // OnConnectedHandler is a function that is to be called

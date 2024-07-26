@@ -4,13 +4,13 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
-	"github.com/wombatlabs/coinsecd/util/math"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/util/math"
 
-	"github.com/wombatlabs/coinsecd/util/difficulty"
+	"github.com/coinsec/coinsecd/util/difficulty"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // DifficultyManager provides a method to resolve the

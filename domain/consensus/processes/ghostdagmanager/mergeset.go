@@ -3,9 +3,9 @@ package ghostdagmanager
 import (
 	"sort"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 func (gm *ghostdagManager) mergeSetWithoutSelectedParent(stagingArea *model.StagingArea,

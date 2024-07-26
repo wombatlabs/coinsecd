@@ -4,17 +4,16 @@ import (
 	// we need to embed the utxoset of mainnet genesis here
 	_ "embed"
 	"fmt"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/multiset"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
-	"github.com/wombatlabs/coinsecd/util/difficulty"
-	"github.com/wombatlabs/coinsecd/util/staging"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/multiset"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/coinsec/coinsecd/infrastructure/db/database"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/util/difficulty"
+	"github.com/coinsec/coinsecd/util/staging"
 	"github.com/pkg/errors"
 )
 
@@ -233,7 +232,7 @@ func (bp *blockProcessor) loadUTXODataForGenesis(stagingArea *model.StagingArea,
 	// pruning point.
 	// The actual UTXO set that fits Mainnet's genesis' UTXO commitment was removed from the codebase in order
 	// to make reduce the consensus initialization time and the compiled binary size, but can be still
-	// found here for anyone to verify: https://github.com/wombatlabs/coinsecd/blob/dbf18d8052f000ba0079be9e79b2d6f5a98b74ca/domain/consensus/processes/blockprocessor/resources/utxos.gz
+	// found here for anyone to verify: https://github.com/coinsec/coinsecd/blob/dbf18d8052f000ba0079be9e79b2d6f5a98b74ca/domain/consensus/processes/blockprocessor/resources/utxos.gz
 	bp.consensusStateStore.StageVirtualUTXODiff(stagingArea, utxo.NewUTXODiff())
 	bp.utxoDiffStore.Stage(stagingArea, blockHash, utxo.NewUTXODiff(), nil)
 	bp.multisetStore.Stage(stagingArea, blockHash, multiset.New())

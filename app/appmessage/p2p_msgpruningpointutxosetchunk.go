@@ -1,6 +1,6 @@
 package appmessage
 
-import "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+import "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 
 // MsgPruningPointUTXOSetChunk represents a coinsec PruningPointUTXOSetChunk message
 type MsgPruningPointUTXOSetChunk struct {

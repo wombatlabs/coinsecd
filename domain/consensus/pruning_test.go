@@ -3,9 +3,9 @@ package consensus_test
 import (
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
 )
 
 func TestPruningDepth(t *testing.T) {

@@ -5,10 +5,10 @@ Any contribution to Coinsecd is very welcome.
 ## Getting started
 
 If you want to start contributing to Coinsecd and don't know where to start, you can pick an issue from
-the [list](https://github.com/wombatlabs/coinsecd/issues).
+the [list](https://github.com/coinsec/coinsecd/issues).
 
 If you want to make a big change it's better to discuss it first by opening an issue or talk about it in
-[Discord](https://discord.gg/DWzrk4ZwbA) to avoid duplicate work.
+[Discord](https://discord.gg/WmGhhzk) to avoid duplicate work.
 
 ## Pull Request process
 

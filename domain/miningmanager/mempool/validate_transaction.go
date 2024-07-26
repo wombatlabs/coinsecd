@@ -2,11 +2,10 @@ package mempool
 
 import (
 	"fmt"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
 )
 
 func (mp *mempool) validateTransactionPreUTXOEntry(transaction *externalapi.DomainTransaction) error {

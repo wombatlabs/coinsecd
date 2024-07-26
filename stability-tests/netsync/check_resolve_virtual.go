@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/stability-tests/common/rpc"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/stability-tests/common/rpc"
 	"github.com/pkg/errors"
 	"time"
 )

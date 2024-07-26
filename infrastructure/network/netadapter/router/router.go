@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/appmessage"
 	"github.com/pkg/errors"
 )
 

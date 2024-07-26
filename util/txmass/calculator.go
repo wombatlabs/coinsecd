@@ -1,8 +1,8 @@
 package txmass
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionhelper"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionhelper"
 )
 
 // Calculator exposes methods to calculate the mass of a transaction

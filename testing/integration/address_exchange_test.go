@@ -1,7 +1,7 @@
 package integration
 
 import (
-	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
+	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
 	"testing"
 )
 

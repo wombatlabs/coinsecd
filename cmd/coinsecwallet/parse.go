@@ -3,14 +3,13 @@ package main
 import (
 	"encoding/hex"
 	"fmt"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
+	"github.com/pkg/errors"
 	"io/ioutil"
 	"strings"
-
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
-	"github.com/pkg/errors"
 )
 
 func parse(conf *parseConfig) error {

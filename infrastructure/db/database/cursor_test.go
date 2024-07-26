@@ -8,7 +8,7 @@ package database_test
 import (
 	"bytes"
 	"fmt"
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
+	"github.com/coinsec/coinsecd/infrastructure/db/database"
 	"reflect"
 	"strings"
 	"testing"

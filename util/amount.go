@@ -5,11 +5,10 @@
 package util
 
 import (
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/pkg/errors"
 	"math"
 	"strconv"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
-	"github.com/pkg/errors"
 )
 
 // AmountUnit describes a method of converting an Amount to something

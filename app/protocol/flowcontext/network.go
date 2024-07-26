@@ -1,11 +1,11 @@
 package flowcontext
 
 import (
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/protocol/common"
-	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/connmanager"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/protocol/common"
+	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
+	"github.com/coinsec/coinsecd/infrastructure/network/connmanager"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
 	"github.com/pkg/errors"
 )
 

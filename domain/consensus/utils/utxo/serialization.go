@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/serialization"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionid"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/serialization"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionid"
 	"github.com/pkg/errors"
 )
 

@@ -19,10 +19,10 @@ coinsecd.db
 *.test
 
 # Real binaries, build with `go build .`
-/coinsecd
+coinsecd
 cmd/gencerts/gencerts
 cmd/coinsecctl/coinsecctl
-cmd/kasminer/coinsecminer
+cmd/secminer/coinsecminer
 *.exe
 *.exe~
 
@@ -60,4 +60,3 @@ coverage.txt
 
 testdbs/
 coverage.tmp
-/build

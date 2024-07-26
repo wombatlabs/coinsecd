@@ -3,14 +3,14 @@ package rpccontext
 import (
 	"sync"
 
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/domain/utxoindex"
-	routerpkg "github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/domain/utxoindex"
+	routerpkg "github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

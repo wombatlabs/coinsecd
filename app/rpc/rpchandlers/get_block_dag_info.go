@@ -1,10 +1,10 @@
 package rpchandlers
 
 import (
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/rpc/rpccontext"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashes"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/rpc/rpccontext"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/hashes"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 )
 
 // HandleGetBlockDAGInfo handles the respectively named RPC command

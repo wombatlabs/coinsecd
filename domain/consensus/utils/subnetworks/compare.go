@@ -2,8 +2,7 @@ package subnetworks
 
 import (
 	"bytes"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // Less returns true iff id a is less than id b

@@ -2,8 +2,8 @@ package utxoindex
 
 import (
 	"encoding/binary"
-	"github.com/wombatlabs/coinsecd/domain/consensus/database/serialization"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/database/serialization"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/proto"
 	"io"

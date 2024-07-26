@@ -6,15 +6,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/dnsseed"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/infrastructure/network/dnsseed"
 	"github.com/pkg/errors"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
+	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/infrastructure/config"
 )
 
 // connectionRequest represents a user request (either through CLI or RPC) to connect to a certain node

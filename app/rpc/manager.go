@@ -1,17 +1,17 @@
 package rpc
 
 import (
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/protocol"
-	"github.com/wombatlabs/coinsecd/app/rpc/rpccontext"
-	"github.com/wombatlabs/coinsecd/domain"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/utxoindex"
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/connmanager"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/protocol"
+	"github.com/coinsec/coinsecd/app/rpc/rpccontext"
+	"github.com/coinsec/coinsecd/domain"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/utxoindex"
+	"github.com/coinsec/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
+	"github.com/coinsec/coinsecd/infrastructure/network/connmanager"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
 	"github.com/pkg/errors"
 )
 

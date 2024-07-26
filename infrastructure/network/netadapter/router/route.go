@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
+	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/appmessage"
 	"github.com/pkg/errors"
 )
 

@@ -1,4 +1,4 @@
-module github.com/wombatlabs/coinsecd
+module github.com/coinsec/coinsecd
 
 go 1.18
 

@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database/ldb"
-	"github.com/wombatlabs/coinsecd/stability-tests/common"
-	"github.com/wombatlabs/coinsecd/stability-tests/common/mine"
+	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/infrastructure/db/database/ldb"
+	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/coinsec/coinsecd/stability-tests/common/mine"
 	"github.com/pkg/errors"
 )
 

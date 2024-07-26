@@ -5,22 +5,22 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/client"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/utils"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
-	"github.com/wombatlabs/coinsecd/domain/miningmanager/mempool"
-	"github.com/wombatlabs/coinsecd/util"
-	"github.com/wombatlabs/coinsecd/util/txmass"
 	"github.com/kaspanet/go-secp256k1"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/client"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/utils"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/domain/miningmanager/mempool"
+	"github.com/coinsec/coinsecd/util"
+	"github.com/coinsec/coinsecd/util/txmass"
 	"github.com/pkg/errors"
 )
 
@@ -116,12 +116,12 @@ func sweep(conf *sweepConfig) error {
 	fmt.Println("\nTransaction ID(s):")
 	for i, txID := range response.TxIDs {
 		fmt.Printf("\t%s\n", txID)
-		fmt.Println("\tSwept:\t", utils.FormatKas(splitTransactions[i].Outputs[0].Value), " SEC")
+		fmt.Println("\tSwept:\t", utils.FormatSec(splitTransactions[i].Outputs[0].Value), " SEC")
 		totalExtracted = totalExtracted + splitTransactions[i].Outputs[0].Value
 	}
 
 	fmt.Println("\nTotal Funds swept (including transaction fees):")
-	fmt.Println("\t", utils.FormatKas(totalExtracted), " SEC")
+	fmt.Println("\t", utils.FormatSec(totalExtracted), " SEC")
 
 	return nil
 }

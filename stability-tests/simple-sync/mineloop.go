@@ -3,11 +3,11 @@ package main
 import (
 	"time"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/stability-tests/common"
-	"github.com/wombatlabs/coinsecd/stability-tests/common/rpc"
-	"github.com/wombatlabs/coinsecd/util"
 	"github.com/kaspanet/go-secp256k1"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/coinsec/coinsecd/stability-tests/common/rpc"
+	"github.com/coinsec/coinsecd/util"
 	"github.com/pkg/errors"
 )
 

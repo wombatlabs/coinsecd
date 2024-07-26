@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
 )
 
 const logLevel = logger.LevelWarn

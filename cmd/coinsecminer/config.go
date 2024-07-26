@@ -7,13 +7,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/infrastructure/config"
 
-	"github.com/wombatlabs/coinsecd/util"
+	"github.com/coinsec/coinsecd/util"
 	"github.com/pkg/errors"
 
-	"github.com/wombatlabs/coinsecd/version"
 	"github.com/jessevdk/go-flags"
+	"github.com/coinsec/coinsecd/version"
 )
 
 const (

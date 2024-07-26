@@ -1,13 +1,13 @@
 package ready
 
 import (
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/protocol/common"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/protocol/common"
 	"sync/atomic"
 
-	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
-	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
-	routerpkg "github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
+	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
+	routerpkg "github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

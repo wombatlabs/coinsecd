@@ -5,7 +5,7 @@
 package bech32_test
 
 import (
-	"github.com/wombatlabs/coinsecd/util/bech32"
+	"github.com/coinsec/coinsecd/util/bech32"
 	"testing"
 )
 

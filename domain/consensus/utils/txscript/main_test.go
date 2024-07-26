@@ -1,10 +1,9 @@
 package txscript
 
 import (
+	"github.com/coinsec/coinsecd/infrastructure/logger"
 	"os"
 	"testing"
-
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
 )
 
 func TestMain(m *testing.M) {

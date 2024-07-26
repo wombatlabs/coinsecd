@@ -5,7 +5,7 @@
 package appmessage
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // MsgTransactionNotFound defines a coinsec TransactionNotFound message which is sent in response to

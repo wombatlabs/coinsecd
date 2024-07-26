@@ -2,6 +2,10 @@ package main
 
 import (
 	"fmt"
+	"github.com/kaspanet/go-secp256k1"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/mining"
+	"github.com/coinsec/coinsecd/util"
 	"math/rand"
 	"os"
 	"os/exec"
@@ -11,15 +15,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/mining"
-	"github.com/wombatlabs/coinsecd/util"
-	"github.com/kaspanet/go-secp256k1"
-
-	"github.com/wombatlabs/coinsecd/stability-tests/common"
-	"github.com/wombatlabs/coinsecd/stability-tests/common/rpc"
-	"github.com/wombatlabs/coinsecd/util/panics"
-	"github.com/wombatlabs/coinsecd/util/profiling"
+	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/coinsec/coinsecd/stability-tests/common/rpc"
+	"github.com/coinsec/coinsecd/util/panics"
+	"github.com/coinsec/coinsecd/util/profiling"
 	"github.com/pkg/errors"
 )
 
@@ -109,7 +108,7 @@ func startNode() (teardown func(), err error) {
 	}
 	log.Infof("coinsecd datadir: %s", dataDir)
 
-	coinsecdCmd, err := common.StartCmd("SECPAD",
+	coinsecdCmd, err := common.StartCmd("COINSECD",
 		"coinsecd",
 		common.NetworkCliArgumentFromNetParams(activeConfig().NetParams()),
 		"--appdir", dataDir,

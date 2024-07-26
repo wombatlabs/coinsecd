@@ -3,8 +3,9 @@ package server
 import (
 	"context"
 
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
 )
 
 func (s *server) Sign(_ context.Context, request *pb.SignRequest) (*pb.SignResponse, error) {

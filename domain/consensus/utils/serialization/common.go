@@ -3,8 +3,8 @@ package serialization
 import (
 	"io"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/util/binaryserializer"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/util/binaryserializer"
 	"github.com/pkg/errors"
 )
 

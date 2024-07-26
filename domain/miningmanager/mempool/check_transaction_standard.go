@@ -3,13 +3,13 @@ package mempool
 import (
 	"fmt"
 
-	"github.com/wombatlabs/coinsecd/util/txmass"
+	"github.com/coinsec/coinsecd/util/txmass"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
 )
 
 const (

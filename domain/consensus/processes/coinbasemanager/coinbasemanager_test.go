@@ -1,19 +1,18 @@
 package coinbasemanager
 
 import (
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
 	"strconv"
 	"testing"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
 )
 
 func TestCalcDeflationaryPeriodBlockSubsidy(t *testing.T) {
 	const secondsPerMonth = 2629800
 	const secondsPerHalving = secondsPerMonth * 12
-	const deflationaryPhaseDaaScore = secondsPerMonth * 6
-	const deflationaryPhaseBaseSubsidy = 440 * constants.SompiPerCoinsec
+	const deflationaryPhaseDaaScore = 1
+	const deflationaryPhaseBaseSubsidy = 1 * constants.SompiPerCoinsec
 	coinbaseManagerInterface := New(
 		nil,
 		0,
@@ -84,11 +83,11 @@ func TestCalcDeflationaryPeriodBlockSubsidy(t *testing.T) {
 
 func TestBuildSubsidyTable(t *testing.T) {
 	deflationaryPhaseBaseSubsidy := dagconfig.MainnetParams.DeflationaryPhaseBaseSubsidy
-	// if deflationaryPhaseBaseSubsidy != 440*constants.SompiPerCoinsec {
-	// 	t.Errorf("TestBuildSubsidyTable: table generation function was not updated to reflect "+
-	// 		"the new base subsidy %d. Please fix the constant above and replace subsidyByDeflationaryMonthTable "+
-	// 		"in coinbasemanager.go with the printed table", deflationaryPhaseBaseSubsidy)
-	// }
+	if deflationaryPhaseBaseSubsidy != 1*constants.SompiPerCoinsec {
+		t.Errorf("TestBuildSubsidyTable: table generation function was not updated to reflect "+
+			"the new base subsidy %d. Please fix the constant above and replace subsidyByDeflationaryMonthTable "+
+			"in coinbasemanager.go with the printed table", deflationaryPhaseBaseSubsidy)
+	}
 	coinbaseManagerInterface := New(
 		nil,
 		0,
@@ -116,19 +115,12 @@ func TestBuildSubsidyTable(t *testing.T) {
 	}
 
 	tableStr := "\n{\t"
-
-	var sumSup = uint64(0)
 	for i := 0; i < len(subsidyTable); i++ {
 		tableStr += strconv.FormatUint(subsidyTable[i], 10) + ", "
 		if (i+1)%25 == 0 {
 			tableStr += "\n\t"
 		}
-		//fmt.Println(subsidyTable[i])
-		sumSup += subsidyTable[i]
 	}
 	tableStr += "\n}"
 	t.Logf(tableStr)
-
-	// fmt.Println(sumSup / constants.SompiPerCoinsec)
-	// fmt.Println(sumSup * 2629800 / constants.SompiPerCoinsec)
 }

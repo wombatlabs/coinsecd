@@ -1,8 +1,8 @@
 package serialization
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
 )
 
 // DbSubnetworkIDToDomainSubnetworkID converts DbSubnetworkId to DomainSubnetworkID

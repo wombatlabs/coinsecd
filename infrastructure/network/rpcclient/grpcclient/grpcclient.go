@@ -2,10 +2,10 @@ package grpcclient
 
 import (
 	"context"
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server/grpcserver"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server/grpcserver"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server/grpcserver/protowire"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/encoding/gzip"

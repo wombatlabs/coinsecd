@@ -7,9 +7,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 func TestCreateDefaultConfigFile(t *testing.T) {

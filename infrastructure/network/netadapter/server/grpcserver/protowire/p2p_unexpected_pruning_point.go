@@ -1,6 +1,6 @@
 package protowire
 
-import "github.com/wombatlabs/coinsecd/app/appmessage"
+import "github.com/coinsec/coinsecd/app/appmessage"
 
 func (x *CoinsecdMessage_UnexpectedPruningPoint) toAppMessage() (appmessage.Message, error) {
 	return &appmessage.MsgUnexpectedPruningPoint{}, nil

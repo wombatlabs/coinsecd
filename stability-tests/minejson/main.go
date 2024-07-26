@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus"
-	"github.com/wombatlabs/coinsecd/stability-tests/common"
-	"github.com/wombatlabs/coinsecd/stability-tests/common/mine"
-	"github.com/wombatlabs/coinsecd/stability-tests/common/rpc"
-	"github.com/wombatlabs/coinsecd/util/panics"
-	"github.com/wombatlabs/coinsecd/util/profiling"
+	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/coinsec/coinsecd/stability-tests/common/mine"
+	"github.com/coinsec/coinsecd/stability-tests/common/rpc"
+	"github.com/coinsec/coinsecd/util/panics"
+	"github.com/coinsec/coinsecd/util/profiling"
 	"github.com/pkg/errors"
 )
 

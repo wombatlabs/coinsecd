@@ -1,11 +1,11 @@
 package rpchandlers
 
 import (
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/rpc/rpccontext"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/miningmanager/mempool"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/rpc/rpccontext"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/miningmanager/mempool"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 
@@ -28,7 +28,8 @@ func HandleSubmitTransaction(context *rpccontext.Context, _ *router.Router, requ
 		}
 
 		log.Debugf("Rejected transaction %s: %s", transactionID, err)
-		errorMessage := &appmessage.SubmitTransactionResponseMessage{}
+		// Return the ID also in the case of error, so that clients can match the response to the correct transaction submit request
+		errorMessage := appmessage.NewSubmitTransactionResponseMessage(transactionID.String())
 		errorMessage.Error = appmessage.RPCErrorf("Rejected transaction %s: %s", transactionID, err)
 		return errorMessage, nil
 	}

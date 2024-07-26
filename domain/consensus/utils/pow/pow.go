@@ -1,15 +1,14 @@
 package pow
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashes"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/serialization"
-	"github.com/wombatlabs/coinsecd/util/difficulty"
-
-	"math/big"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/hashes"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/serialization"
+	"github.com/coinsec/coinsecd/util/difficulty"
 
 	"github.com/pkg/errors"
+	"math/big"
 )
 
 // State is an intermediate data structure with pre-computed values to speed up mining.

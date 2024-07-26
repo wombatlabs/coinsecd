@@ -1,6 +1,6 @@
 package appmessage
 
-import "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+import "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 
 // mainnetGenesisHash is the hash of the first block in the block DAG for the
 // main network (genesis block).

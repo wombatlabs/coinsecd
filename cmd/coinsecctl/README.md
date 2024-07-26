@@ -22,7 +22,7 @@ $ go version
 - Run the following commands to obtain and install coinsecd including all dependencies:
 
 ```bash
-$ git clone https://github.com/wombatlabs/coinsecd
+$ git clone https://github.com/coinsec/coinsecd
 $ cd coinsecd/cmd/coinsecctl
 $ go install .
 ```
@@ -32,10 +32,10 @@ $ go install .
 
 ## Usage
 
-The full kaspctl configuration options can be seen with:
+The full coinsecctl configuration options can be seen with:
 
 ```bash
-$ kaspctl --help
+$ coinsecctl --help
 ```
 
 But the minimum configuration needed to run it is:

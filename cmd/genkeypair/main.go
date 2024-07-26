@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/wombatlabs/coinsecd/util"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/coinsec/coinsecd/util"
 )
 
 func main() {

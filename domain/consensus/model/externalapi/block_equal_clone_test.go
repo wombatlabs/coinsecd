@@ -1,12 +1,11 @@
 package externalapi_test
 
 import (
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/blockheader"
 	"math/big"
 	"reflect"
 	"testing"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/blockheader"
 )
 
 type blockToCompare struct {

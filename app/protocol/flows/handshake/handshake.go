@@ -3,18 +3,18 @@ package handshake
 import (
 	"sync/atomic"
 
-	"github.com/wombatlabs/coinsecd/domain"
+	"github.com/coinsec/coinsecd/domain"
 
-	"github.com/wombatlabs/coinsecd/app/protocol/common"
-	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
+	"github.com/coinsec/coinsecd/app/protocol/common"
+	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
+	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
+	"github.com/coinsec/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
-	routerpkg "github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
+	routerpkg "github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

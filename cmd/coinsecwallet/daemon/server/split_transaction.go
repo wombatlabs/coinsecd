@@ -1,17 +1,17 @@
 package server
 
 import (
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 
-	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
-	"github.com/wombatlabs/coinsecd/domain/miningmanager/mempool"
-	"github.com/wombatlabs/coinsecd/util"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/coinsec/coinsecd/domain/miningmanager/mempool"
+	"github.com/coinsec/coinsecd/util"
 )
 
 // maybeAutoCompoundTransaction checks if a transaction's mass is higher that what is allowed for a standard
@@ -264,7 +264,7 @@ func (s *server) moreUTXOsForMergeTransaction(alreadySelectedUTXOs []*libcoinsec
 		if _, ok := alreadySelectedUTXOsMap[*utxo.Outpoint]; ok {
 			continue
 		}
-		if !isUTXOSpendable(utxo, dagInfo.VirtualDAAScore, s.params.BlockCoinbaseMaturity) {
+		if !s.isUTXOSpendable(utxo, dagInfo.VirtualDAAScore) {
 			continue
 		}
 		additionalUTXOs = append(additionalUTXOs, &libcoinsecwallet.UTXO{

@@ -3,9 +3,9 @@ package addressexchange
 import (
 	"math/rand"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
 )
 
 // SendAddressesContext is the interface for the context needed for the SendAddresses flow.

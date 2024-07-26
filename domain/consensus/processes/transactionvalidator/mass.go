@@ -1,7 +1,7 @@
 package transactionvalidator
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
 )
 
 // PopulateMass calculates and populates the mass of the given transaction

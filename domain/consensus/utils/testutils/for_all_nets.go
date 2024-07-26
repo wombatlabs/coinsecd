@@ -3,8 +3,8 @@ package testutils
 import (
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus"
-	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/domain/dagconfig"
 )
 
 // ForAllNets runs the passed testFunc with all available networks

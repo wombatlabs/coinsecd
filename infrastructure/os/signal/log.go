@@ -5,7 +5,7 @@
 package signal
 
 import (
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
 )
 
-var bgadLog = logger.RegisterSubSystem("SECD")
+var secdLog = logger.RegisterSubSystem("SECD")

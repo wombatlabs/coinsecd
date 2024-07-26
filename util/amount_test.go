@@ -5,12 +5,11 @@
 package util_test
 
 import (
+	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
 	"math"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
-
-	. "github.com/wombatlabs/coinsecd/util"
+	. "github.com/coinsec/coinsecd/util"
 )
 
 func TestAmountCreation(t *testing.T) {

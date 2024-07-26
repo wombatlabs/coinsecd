@@ -1,10 +1,9 @@
 package pow
 
 import (
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/hashes"
 	"math"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashes"
 )
 
 const eps float64 = 1e-9

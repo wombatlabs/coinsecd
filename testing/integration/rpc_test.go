@@ -1,12 +1,12 @@
 package integration
 
 import (
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/infrastructure/config"
 	"runtime"
 	"testing"
 	"time"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/network/rpcclient"
+	"github.com/coinsec/coinsecd/infrastructure/network/rpcclient"
 )
 
 const rpcTimeout = 10 * time.Second

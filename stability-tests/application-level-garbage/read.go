@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/json"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/stability-tests/common"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/stability-tests/common"
 	"github.com/pkg/errors"
 )
 

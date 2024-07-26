@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/id"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/id"
 )
 
 // TestVersion tests the MsgVersion API.

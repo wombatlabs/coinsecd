@@ -5,18 +5,18 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
 
-	"github.com/wombatlabs/coinsecd/app/appmessage"
-	"github.com/wombatlabs/coinsecd/app/rpc/rpccontext"
-	"github.com/wombatlabs/coinsecd/app/rpc/rpchandlers"
-	"github.com/wombatlabs/coinsecd/domain/consensus"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/testapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashes"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
-	"github.com/wombatlabs/coinsecd/domain/miningmanager"
-	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/coinsec/coinsecd/app/rpc/rpccontext"
+	"github.com/coinsec/coinsecd/app/rpc/rpchandlers"
+	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/model/testapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/hashes"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
+	"github.com/coinsec/coinsecd/domain/miningmanager"
+	"github.com/coinsec/coinsecd/infrastructure/config"
 )
 
 type fakeDomain struct {

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/wombatlabs/coinsecd/infrastructure/network/rpcclient/grpcclient"
+	"github.com/coinsec/coinsecd/infrastructure/network/rpcclient/grpcclient"
 	"github.com/pkg/errors"
 )
 

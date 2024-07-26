@@ -3,7 +3,7 @@ package common
 import (
 	"strings"
 
-	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/coinsec/coinsecd/infrastructure/logger"
 )
 
 // LogWriter writes to the given log with the given log level and prefix

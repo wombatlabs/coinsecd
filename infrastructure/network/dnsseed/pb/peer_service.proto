@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/wombatlabs/coinsecd/pb";
+option go_package = "github.com/coinsec/coinsecd/pb";
 
 service PeerService {
   rpc GetPeersList(GetPeersListRequest) returns (GetPeersListResponse) {}

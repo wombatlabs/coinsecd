@@ -1,10 +1,9 @@
 package blockheader
 
 import (
+	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/coinsec/coinsecd/domain/consensus/utils/pow"
 	"math/big"
-
-	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
-	"github.com/wombatlabs/coinsecd/domain/consensus/utils/pow"
 )
 
 type blockHeader struct {

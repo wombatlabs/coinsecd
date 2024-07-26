@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/wombatlabs/coinsecd/domain/consensus/model"
-	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
+	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/coinsec/coinsecd/infrastructure/db/database"
 )
 
 func dbKeyToDatabaseKey(key model.DBKey) *database.Key {
