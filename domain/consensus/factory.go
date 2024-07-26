@@ -241,6 +241,7 @@ func (f *factory) NewConsensus(config *Config, db infrastructuredatabase.Databas
 		dbManager,
 
 		config.SubsidyGenesisReward,
+		config.SubsidyPremineReward,
 		config.PreDeflationaryPhaseBaseSubsidy,
 		config.CoinbasePayloadScriptPublicKeyMaxLength,
 		config.GenesisHash,

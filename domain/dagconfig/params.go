@@ -92,6 +92,7 @@ type Params struct {
 	// SubsidyPastRewardMultiplier are part of the block subsidy equation.
 	// Further details: https://hashdag.medium.com/coinsec-launch-plan-9a63f4d754a6
 	SubsidyGenesisReward            uint64
+	SubsidyPremineReward            uint64
 	PreDeflationaryPhaseBaseSubsidy uint64
 	DeflationaryPhaseBaseSubsidy    uint64
 

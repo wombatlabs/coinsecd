@@ -14,6 +14,7 @@ import (
 
 type coinbaseManager struct {
 	subsidyGenesisReward                    uint64
+	SubsidyPremineReward                    uint64
 	preDeflationaryPhaseBaseSubsidy         uint64
 	coinbasePayloadScriptPublicKeyMaxLength uint8
 	genesisHash                             *externalapi.DomainHash
@@ -278,6 +279,7 @@ func New(
 	databaseContext model.DBReader,
 
 	subsidyGenesisReward uint64,
+	SubsidyPremineReward uint64,
 	preDeflationaryPhaseBaseSubsidy uint64,
 	coinbasePayloadScriptPublicKeyMaxLength uint8,
 	genesisHash *externalapi.DomainHash,
@@ -296,6 +298,7 @@ func New(
 		databaseContext: databaseContext,
 
 		subsidyGenesisReward:                    subsidyGenesisReward,
+		subsidyPremineReward:                    subsidyPremineReward,
 		preDeflationaryPhaseBaseSubsidy:         preDeflationaryPhaseBaseSubsidy,
 		coinbasePayloadScriptPublicKeyMaxLength: coinbasePayloadScriptPublicKeyMaxLength,
 		genesisHash:                             genesisHash,
