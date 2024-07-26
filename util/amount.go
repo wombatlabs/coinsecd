@@ -25,7 +25,7 @@ const (
 	AmountSEC      AmountUnit = 0
 	AmountMilliSEC AmountUnit = -3
 	AmountMicroSEC AmountUnit = -6
-	AmountSompi    AmountUnit = -8
+	AmountSompi    AmountUnit = -9
 )
 
 // String returns the unit as a string. For recognized units, the SI
