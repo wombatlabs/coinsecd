@@ -14,11 +14,11 @@ type key struct {
 func newKey(hash *externalapi.DomainHash, isTrustedData bool) key {
 	if hash == nil || isTrustedData == false {
         return nil, fmt.Errorf("received nil parameter")
-    }
-
-	return key{
-		hash:          *hash,
-		isTrustedData: isTrustedData,
+    } else {
+		return key{
+			hash:          *hash,
+			isTrustedData: isTrustedData,
+		}
 	}
 }
 
