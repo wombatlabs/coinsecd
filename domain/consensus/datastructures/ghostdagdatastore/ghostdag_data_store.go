@@ -36,15 +36,7 @@ func (gds *ghostdagDataStore) Stage(stagingArea *model.StagingArea, blockHash *e
 
 	stagingShard := gds.stagingShard(stagingArea)
 
-	// Generate the key and handle any potential error
-	key, err := newKey(blockHash, isTrustedData)
-	if err != nil {
-		return err
-	}
-
-	// Stage the data
-	stagingShard.toAdd[key] = blockGHOSTDAGData
-	return nil
+	stagingShard.toAdd[newKey(blockHash, isTrustedData)] = blockGHOSTDAGData
 }
 
 func (gds *ghostdagDataStore) IsStaged(stagingArea *model.StagingArea) bool {
@@ -55,11 +47,7 @@ func (gds *ghostdagDataStore) IsStaged(stagingArea *model.StagingArea) bool {
 func (gds *ghostdagDataStore) Get(dbContext model.DBReader, stagingArea *model.StagingArea, blockHash *externalapi.DomainHash, isTrustedData bool) (*externalapi.BlockGHOSTDAGData, error) {
 	stagingShard := gds.stagingShard(stagingArea)
 
-	key, err := newKey(blockHash, isTrustedData)
-	if err != nil {
-		return nil, err
-	}
-
+	key := newKey(blockHash, isTrustedData)
 	if blockGHOSTDAGData, ok := stagingShard.toAdd[key]; ok {
 		return blockGHOSTDAGData, nil
 	}
@@ -68,8 +56,7 @@ func (gds *ghostdagDataStore) Get(dbContext model.DBReader, stagingArea *model.S
 		return blockGHOSTDAGData, nil
 	}
 
-	serializedKey := gds.serializeKey(key)
-	blockGHOSTDAGDataBytes, err := dbContext.Get(serializedKey)
+	blockGHOSTDAGDataBytes, err := dbContext.Get(gds.serializeKey(key))
 	if err != nil {
 		return nil, err
 	}
@@ -78,7 +65,6 @@ func (gds *ghostdagDataStore) Get(dbContext model.DBReader, stagingArea *model.S
 	if err != nil {
 		return nil, err
 	}
-
 	gds.cache.Add(blockHash, isTrustedData, blockGHOSTDAGData)
 	return blockGHOSTDAGData, nil
 }

@@ -1,7 +1,6 @@
 package ghostdagdatastore
 
 import (
-	"fmt"
 	"github.com/wombatlabs/coinsecd/domain/consensus/model"
 	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
@@ -11,14 +10,11 @@ type key struct {
 	isTrustedData bool
 }
 
-func newKey(hash *externalapi.DomainHash, isTrustedData bool) (key, error) {
-	if hash == nil {
-		return key{}, fmt.Errorf("hash parameter is nil")
-	}
+func newKey(hash *externalapi.DomainHash, isTrustedData bool) key {
 	return key{
 		hash:          *hash,
 		isTrustedData: isTrustedData,
-	}, nil
+	}
 }
 
 type ghostdagDataStagingShard struct {
