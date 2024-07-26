@@ -12,14 +12,13 @@ type key struct {
 }
 
 func newKey(hash *externalapi.DomainHash, isTrustedData bool) (key, error) {
-	if hash == nil || isTrustedData == false {
-        return nil, fmt.Errorf("received nil parameter")
-    } else {
-		return key{
-			hash:          *hash,
-			isTrustedData: isTrustedData,
-		}
+	if hash == nil {
+		return key{}, fmt.Errorf("hash parameter is nil")
 	}
+	return key{
+		hash:          *hash,
+		isTrustedData: isTrustedData,
+	}, nil
 }
 
 type ghostdagDataStagingShard struct {
