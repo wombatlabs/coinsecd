@@ -1,8 +1,8 @@
 package serialization
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/multiset"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/multiset"
 )
 
 // MultisetToDBMultiset converts Multiset to DbMultiset

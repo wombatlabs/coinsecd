@@ -5,8 +5,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/coinsec/coinsecd/domain/dagconfig"
-	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
 	"github.com/pkg/errors"
 )
 

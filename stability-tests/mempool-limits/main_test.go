@@ -1,10 +1,10 @@
 package mempoollimits
 
 import (
-	"github.com/coinsec/coinsecd/infrastructure/network/rpcclient"
-	"github.com/coinsec/coinsecd/stability-tests/common"
-	"github.com/coinsec/coinsecd/util/panics"
-	"github.com/coinsec/coinsecd/util/profiling"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/rpcclient"
+	"github.com/wombatlabs/coinsecd/stability-tests/common"
+	"github.com/wombatlabs/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/util/profiling"
 	"os"
 	"testing"
 )

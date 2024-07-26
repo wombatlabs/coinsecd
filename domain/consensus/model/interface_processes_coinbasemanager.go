@@ -1,6 +1,6 @@
 package model
 
-import "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+import "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 
 // CoinbaseManager exposes methods for handling blocks'
 // coinbase transactions

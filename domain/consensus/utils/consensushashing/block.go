@@ -3,10 +3,10 @@ package consensushashing
 import (
 	"io"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/serialization"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/serialization"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/hashes"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashes"
 	"github.com/pkg/errors"
 )
 

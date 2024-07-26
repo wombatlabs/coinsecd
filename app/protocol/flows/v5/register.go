@@ -1,16 +1,16 @@
 package v5
 
 import (
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/app/protocol/common"
-	"github.com/coinsec/coinsecd/app/protocol/flowcontext"
-	"github.com/coinsec/coinsecd/app/protocol/flows/v5/addressexchange"
-	"github.com/coinsec/coinsecd/app/protocol/flows/v5/blockrelay"
-	"github.com/coinsec/coinsecd/app/protocol/flows/v5/ping"
-	"github.com/coinsec/coinsecd/app/protocol/flows/v5/rejects"
-	"github.com/coinsec/coinsecd/app/protocol/flows/v5/transactionrelay"
-	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
-	routerpkg "github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/protocol/common"
+	"github.com/wombatlabs/coinsecd/app/protocol/flowcontext"
+	"github.com/wombatlabs/coinsecd/app/protocol/flows/v5/addressexchange"
+	"github.com/wombatlabs/coinsecd/app/protocol/flows/v5/blockrelay"
+	"github.com/wombatlabs/coinsecd/app/protocol/flows/v5/ping"
+	"github.com/wombatlabs/coinsecd/app/protocol/flows/v5/rejects"
+	"github.com/wombatlabs/coinsecd/app/protocol/flows/v5/transactionrelay"
+	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
+	routerpkg "github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 )
 
 type protocolManager interface {

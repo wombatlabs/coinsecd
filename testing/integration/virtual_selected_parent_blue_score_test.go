@@ -1,7 +1,7 @@
 package integration
 
 import (
-	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
 	"testing"
 )
 

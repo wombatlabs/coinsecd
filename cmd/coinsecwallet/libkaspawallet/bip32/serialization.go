@@ -3,7 +3,7 @@ package bip32
 import (
 	"encoding/binary"
 	"github.com/kaspanet/go-secp256k1"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/bip32/base58"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/bip32/base58"
 	"github.com/pkg/errors"
 )
 

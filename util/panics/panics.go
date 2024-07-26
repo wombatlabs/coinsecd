@@ -2,7 +2,7 @@ package panics
 
 import (
 	"fmt"
-	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
 	"os"
 	"runtime/debug"
 	"sync/atomic"

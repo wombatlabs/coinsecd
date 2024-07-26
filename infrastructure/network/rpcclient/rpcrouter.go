@@ -1,8 +1,8 @@
 package rpcclient
 
 import (
-	"github.com/coinsec/coinsecd/app/appmessage"
-	routerpkg "github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	routerpkg "github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 )
 
 type rpcRouter struct {

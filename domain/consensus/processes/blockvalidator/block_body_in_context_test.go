@@ -3,14 +3,14 @@ package blockvalidator_test
 import (
 	"testing"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
 
-	"github.com/coinsec/coinsecd/domain/consensus"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
+	"github.com/wombatlabs/coinsecd/domain/consensus"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
 	"github.com/pkg/errors"
 )
 

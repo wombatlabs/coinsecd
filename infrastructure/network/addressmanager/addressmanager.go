@@ -5,13 +5,13 @@
 package addressmanager
 
 import (
-	"github.com/coinsec/coinsecd/infrastructure/db/database"
-	"github.com/coinsec/coinsecd/util/mstime"
+	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
+	"github.com/wombatlabs/coinsecd/util/mstime"
 	"net"
 	"sync"
 	"time"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
 	"github.com/pkg/errors"
 )
 

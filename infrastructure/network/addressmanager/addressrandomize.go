@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
 )
 
 // AddressRandomize implement addressRandomizer interface

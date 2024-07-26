@@ -1,10 +1,10 @@
 package consensusstatemanager
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
 )
 
 // PopulateTransactionWithUTXOEntries populates the transaction UTXO entries with data from the virtual's UTXO set.

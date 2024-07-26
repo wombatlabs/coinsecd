@@ -3,10 +3,10 @@ package main
 import (
 	"time"
 
-	"github.com/coinsec/coinsecd/stability-tests/common"
-	"github.com/coinsec/coinsecd/stability-tests/common/rpc"
-	"github.com/coinsec/coinsecd/util/panics"
-	"github.com/coinsec/coinsecd/util/profiling"
+	"github.com/wombatlabs/coinsecd/stability-tests/common"
+	"github.com/wombatlabs/coinsecd/stability-tests/common/rpc"
+	"github.com/wombatlabs/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/util/profiling"
 	"github.com/pkg/errors"
 )
 

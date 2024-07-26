@@ -1,6 +1,6 @@
 package model
 
-import "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+import "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 
 // BlockHeaderStore represents a store of block headers
 type BlockHeaderStore interface {

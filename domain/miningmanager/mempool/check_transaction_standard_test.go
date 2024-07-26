@@ -9,17 +9,17 @@ import (
 	"math"
 	"testing"
 
-	"github.com/coinsec/coinsecd/domain/consensusreference"
+	"github.com/wombatlabs/coinsecd/domain/consensusreference"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
 
-	"github.com/coinsec/coinsecd/domain/consensus"
+	"github.com/wombatlabs/coinsecd/domain/consensus"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
+	"github.com/wombatlabs/coinsecd/util"
 	"github.com/pkg/errors"
 )
 

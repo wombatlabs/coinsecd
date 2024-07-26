@@ -1,9 +1,9 @@
 package transactionvalidator
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/domain/consensus/model/testapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/testapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
 )
 
 type testTransactionValidator struct {

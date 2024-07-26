@@ -1,7 +1,7 @@
 package serialization
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // DbHashToDomainHash converts a DbHash to a DomainHash

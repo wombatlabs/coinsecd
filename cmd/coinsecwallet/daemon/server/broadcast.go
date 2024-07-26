@@ -4,13 +4,13 @@ import (
 	"context"
 	"time"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/coinsec/coinsecd/infrastructure/network/rpcclient"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/rpcclient"
 	"github.com/pkg/errors"
 )
 

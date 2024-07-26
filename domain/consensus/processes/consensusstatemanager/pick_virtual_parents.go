@@ -1,13 +1,13 @@
 package consensusstatemanager
 
 import (
-	"github.com/coinsec/coinsecd/infrastructure/logger"
-	"github.com/coinsec/coinsecd/util/math"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/util/math"
 	"github.com/pkg/errors"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/hashset"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashset"
 )
 
 func (csm *consensusStateManager) pickVirtualParents(stagingArea *model.StagingArea, tips []*externalapi.DomainHash) ([]*externalapi.DomainHash, error) {

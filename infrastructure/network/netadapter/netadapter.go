@@ -4,12 +4,12 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/infrastructure/config"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/id"
-	routerpkg "github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server/grpcserver"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/id"
+	routerpkg "github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server/grpcserver"
 	"github.com/pkg/errors"
 )
 

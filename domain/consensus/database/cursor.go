@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/infrastructure/db/database"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
 	"github.com/pkg/errors"
 )
 

@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/util"
 )
 
 func TestAddresses(t *testing.T) {

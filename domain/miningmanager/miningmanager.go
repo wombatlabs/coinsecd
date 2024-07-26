@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensusreference"
-	miningmanagermodel "github.com/coinsec/coinsecd/domain/miningmanager/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensusreference"
+	miningmanagermodel "github.com/wombatlabs/coinsecd/domain/miningmanager/model"
 )
 
 // MiningManager creates block templates for mining as well as maintaining

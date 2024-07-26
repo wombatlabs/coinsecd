@@ -2,7 +2,7 @@ package common
 
 import (
 	"fmt"
-	"github.com/coinsec/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
 	"os"
 	"sync/atomic"
 	"syscall"

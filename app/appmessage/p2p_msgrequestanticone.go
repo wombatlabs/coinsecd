@@ -5,7 +5,7 @@
 package appmessage
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // MsgRequestAnticone implements the Message interface and represents a coinsec

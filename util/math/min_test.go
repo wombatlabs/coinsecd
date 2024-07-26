@@ -1,7 +1,7 @@
 package math_test
 
 import (
-	utilMath "github.com/coinsec/coinsecd/util/math"
+	utilMath "github.com/wombatlabs/coinsecd/util/math"
 	"math"
 	"testing"
 )

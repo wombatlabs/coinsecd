@@ -11,13 +11,13 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionid"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionid"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // TestTx tests the MsgTx API.

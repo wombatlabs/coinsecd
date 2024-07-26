@@ -1,13 +1,13 @@
 package blockrelay
 
 import (
-	"github.com/coinsec/coinsecd/app/appmessage"
-	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
-	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
-	"github.com/coinsec/coinsecd/domain"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/infrastructure/config"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
+	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
+	"github.com/wombatlabs/coinsecd/domain"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 	"sync/atomic"
 )
 

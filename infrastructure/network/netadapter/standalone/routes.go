@@ -3,12 +3,12 @@ package standalone
 import (
 	"time"
 
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
 
 	"github.com/pkg/errors"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 )
 
 // Routes holds the incoming and outgoing routes of a connection created by MinimalNetAdapter

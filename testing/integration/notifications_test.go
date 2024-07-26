@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
 )
 
 func setOnBlockAddedHandler(t *testing.T, harness *appHarness, handler func(notification *appmessage.BlockAddedNotificationMessage)) {

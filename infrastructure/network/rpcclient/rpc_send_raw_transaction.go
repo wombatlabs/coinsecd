@@ -3,7 +3,7 @@ package rpcclient
 import (
 	"strings"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
 )
 
 // SubmitTransaction sends an RPC request respective to the function's name and returns the RPC server's response

@@ -22,7 +22,7 @@ $ go version
 - Run the following commands to obtain and install coinsecd including all dependencies:
 
 ```bash
-$ git clone https://github.com/coinsec/coinsecd
+$ git clone https://github.com/wombatlabs/coinsecd
 $ cd coinsecd/cmd/coinsecminer
 $ go install .
 ```

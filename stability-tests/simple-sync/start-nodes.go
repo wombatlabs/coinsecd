@@ -7,8 +7,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/coinsec/coinsecd/stability-tests/common"
-	"github.com/coinsec/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/stability-tests/common"
+	"github.com/wombatlabs/coinsecd/util/panics"
 	"github.com/pkg/errors"
 )
 

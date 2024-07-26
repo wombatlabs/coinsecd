@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
 )
 
 func TestIntegrationBasicSync(t *testing.T) {

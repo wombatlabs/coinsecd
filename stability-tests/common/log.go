@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/coinsec/coinsecd/infrastructure/logger"
-	"github.com/coinsec/coinsecd/stability-tests/common/mine"
-	"github.com/coinsec/coinsecd/stability-tests/common/rpc"
-	"github.com/coinsec/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/stability-tests/common/mine"
+	"github.com/wombatlabs/coinsecd/stability-tests/common/rpc"
+	"github.com/wombatlabs/coinsecd/util/panics"
 )
 
 // log is a logger that is initialized with no output filters. This

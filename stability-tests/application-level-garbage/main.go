@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/coinsec/coinsecd/infrastructure/config"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/standalone"
-	"github.com/coinsec/coinsecd/stability-tests/common"
-	"github.com/coinsec/coinsecd/util/panics"
-	"github.com/coinsec/coinsecd/util/profiling"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/standalone"
+	"github.com/wombatlabs/coinsecd/stability-tests/common"
+	"github.com/wombatlabs/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/util/profiling"
 )
 
 func main() {

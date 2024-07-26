@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 func Benchmark_serializeUTXO(b *testing.B) {

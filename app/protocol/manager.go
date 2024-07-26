@@ -5,20 +5,20 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/coinsec/coinsecd/app/protocol/common"
+	"github.com/wombatlabs/coinsecd/app/protocol/common"
 
 	"github.com/pkg/errors"
 
-	"github.com/coinsec/coinsecd/domain"
+	"github.com/wombatlabs/coinsecd/domain"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 
-	"github.com/coinsec/coinsecd/app/protocol/flowcontext"
-	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
-	"github.com/coinsec/coinsecd/infrastructure/config"
-	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
-	"github.com/coinsec/coinsecd/infrastructure/network/connmanager"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
+	"github.com/wombatlabs/coinsecd/app/protocol/flowcontext"
+	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/connmanager"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
 )
 
 // Manager manages the p2p protocol

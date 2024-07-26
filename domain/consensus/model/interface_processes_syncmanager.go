@@ -1,6 +1,6 @@
 package model
 
-import "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+import "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 
 // SyncManager exposes functions to support sync between coinsecd nodes
 type SyncManager interface {

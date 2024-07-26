@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"github.com/kaspanet/go-secp256k1"
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/mining"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/mining"
+	"github.com/wombatlabs/coinsecd/util"
 	"math/rand"
 	"os"
 	"os/exec"
@@ -15,10 +15,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/coinsec/coinsecd/stability-tests/common"
-	"github.com/coinsec/coinsecd/stability-tests/common/rpc"
-	"github.com/coinsec/coinsecd/util/panics"
-	"github.com/coinsec/coinsecd/util/profiling"
+	"github.com/wombatlabs/coinsecd/stability-tests/common"
+	"github.com/wombatlabs/coinsecd/stability-tests/common/rpc"
+	"github.com/wombatlabs/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/util/profiling"
 	"github.com/pkg/errors"
 )
 

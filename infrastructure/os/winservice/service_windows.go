@@ -9,9 +9,9 @@ import (
 
 	"github.com/btcsuite/winsvc/eventlog"
 	"github.com/btcsuite/winsvc/svc"
-	"github.com/coinsec/coinsecd/infrastructure/config"
-	"github.com/coinsec/coinsecd/infrastructure/os/signal"
-	"github.com/coinsec/coinsecd/version"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/infrastructure/os/signal"
+	"github.com/wombatlabs/coinsecd/version"
 )
 
 // Service houses the main service handler which handles all service

@@ -8,9 +8,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // These are the constants specified for maximums in individual scripts.

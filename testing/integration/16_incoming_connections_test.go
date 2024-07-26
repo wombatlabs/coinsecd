@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
 )
 
 func Test16IncomingConnections(t *testing.T) {

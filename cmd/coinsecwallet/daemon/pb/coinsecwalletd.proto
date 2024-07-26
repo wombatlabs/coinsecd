@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb";
+option go_package = "github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb";
 package coinsecwalletd;
 
 service coinsecwalletd {

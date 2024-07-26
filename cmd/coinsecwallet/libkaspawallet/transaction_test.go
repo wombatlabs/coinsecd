@@ -2,18 +2,18 @@ package libcoinsecwallet_test
 
 import (
 	"fmt"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
 	"strings"
 	"testing"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/coinsec/coinsecd/domain/consensus"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/wombatlabs/coinsecd/domain/consensus"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
+	"github.com/wombatlabs/coinsecd/util"
 )
 
 func forSchnorrAndECDSA(t *testing.T, testFunc func(t *testing.T, ecdsa bool)) {

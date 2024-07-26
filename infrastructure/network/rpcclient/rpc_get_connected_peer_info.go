@@ -1,6 +1,6 @@
 package rpcclient
 
-import "github.com/coinsec/coinsecd/app/appmessage"
+import "github.com/wombatlabs/coinsecd/app/appmessage"
 
 // GetConnectedPeerInfo sends an RPC request respective to the function's name and returns the RPC server's response
 func (c *RPCClient) GetConnectedPeerInfo() (*appmessage.GetConnectedPeerInfoResponseMessage, error) {

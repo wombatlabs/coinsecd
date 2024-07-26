@@ -18,12 +18,12 @@ import (
 
 	"github.com/btcsuite/go-socks/socks"
 	"github.com/jessevdk/go-flags"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/dagconfig"
-	"github.com/coinsec/coinsecd/infrastructure/logger"
-	"github.com/coinsec/coinsecd/util"
-	"github.com/coinsec/coinsecd/util/network"
-	"github.com/coinsec/coinsecd/version"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/util/network"
+	"github.com/wombatlabs/coinsecd/version"
 	"github.com/pkg/errors"
 )
 

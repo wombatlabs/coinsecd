@@ -8,16 +8,16 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
 
 	"github.com/kaspanet/go-secp256k1"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 
-	"github.com/coinsec/coinsecd/domain/dagconfig"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/util"
 )
 
 func mkGetKey(keys map[string]*secp256k1.SchnorrKeyPair) KeyDB {

@@ -1,5 +1,5 @@
 package pruningproofmanager
 
-import "github.com/coinsec/coinsecd/infrastructure/logger"
+import "github.com/wombatlabs/coinsecd/infrastructure/logger"
 
 var log = logger.RegisterSubSystem("PPMN")

@@ -1,20 +1,20 @@
 package protocol
 
 import (
-	"github.com/coinsec/coinsecd/app/protocol/common"
-	"github.com/coinsec/coinsecd/app/protocol/flows/ready"
-	"github.com/coinsec/coinsecd/app/protocol/flows/v5"
+	"github.com/wombatlabs/coinsecd/app/protocol/common"
+	"github.com/wombatlabs/coinsecd/app/protocol/flows/ready"
+	"github.com/wombatlabs/coinsecd/app/protocol/flows/v5"
 	"sync"
 	"sync/atomic"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/app/protocol/flows/handshake"
-	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
-	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
-	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
-	"github.com/coinsec/coinsecd/infrastructure/network/connmanager"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
-	routerpkg "github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/protocol/flows/handshake"
+	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
+	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/connmanager"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
+	routerpkg "github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

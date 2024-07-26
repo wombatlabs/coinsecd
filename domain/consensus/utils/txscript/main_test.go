@@ -1,7 +1,7 @@
 package txscript
 
 import (
-	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
 	"os"
 	"testing"
 )

@@ -3,7 +3,7 @@ package dagconfig_test
 import (
 	"testing"
 
-	. "github.com/coinsec/coinsecd/domain/dagconfig"
+	. "github.com/wombatlabs/coinsecd/domain/dagconfig"
 )
 
 // Define some of the required parameters for a user-registered

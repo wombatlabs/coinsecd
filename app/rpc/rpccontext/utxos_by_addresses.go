@@ -2,12 +2,12 @@ package rpccontext
 
 import (
 	"encoding/hex"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
+	"github.com/wombatlabs/coinsecd/util"
 	"github.com/pkg/errors"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/domain/utxoindex"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/domain/utxoindex"
 )
 
 // ConvertUTXOOutpointEntryPairsToUTXOsByAddressesEntries converts

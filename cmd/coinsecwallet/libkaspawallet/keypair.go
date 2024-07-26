@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	"github.com/kaspanet/go-secp256k1"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/bip32"
-	"github.com/coinsec/coinsecd/domain/dagconfig"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/bip32"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/util"
 	"github.com/pkg/errors"
 )
 

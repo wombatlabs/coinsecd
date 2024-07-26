@@ -8,7 +8,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
 )
 
 // TestIPTypes ensures the various functions which determine the type of an IP

@@ -1,10 +1,10 @@
 package transactionvalidator
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
-	"github.com/coinsec/coinsecd/util/txmass"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
+	"github.com/wombatlabs/coinsecd/util/txmass"
 )
 
 const sigCacheSize = 10_000

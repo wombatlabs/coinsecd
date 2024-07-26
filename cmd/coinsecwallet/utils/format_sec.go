@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
 	"github.com/pkg/errors"
 )
 

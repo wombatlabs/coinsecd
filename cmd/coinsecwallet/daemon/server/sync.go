@@ -5,9 +5,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
 	"github.com/pkg/errors"
 )
 

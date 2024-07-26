@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/wombatlabs/coinsecd/util"
 	"github.com/pkg/errors"
 )
 

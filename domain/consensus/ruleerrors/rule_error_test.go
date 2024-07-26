@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 func TestNewErrMissingTxOut(t *testing.T) {

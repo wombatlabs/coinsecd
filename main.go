@@ -8,7 +8,7 @@ import (
 	_ "net/http/pprof"
 	"os"
 
-	"github.com/coinsec/coinsecd/app"
+	"github.com/wombatlabs/coinsecd/app"
 )
 
 func main() {

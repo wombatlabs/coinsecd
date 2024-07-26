@@ -1,13 +1,13 @@
 package coinbasemanager
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/hashset"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionhelper"
-	"github.com/coinsec/coinsecd/infrastructure/db/database"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashset"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionhelper"
+	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
 	"github.com/pkg/errors"
 	"math"
 )

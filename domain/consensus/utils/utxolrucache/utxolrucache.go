@@ -1,7 +1,7 @@
 package utxolrucache
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // LRUCache is a least-recently-used cache for UTXO entries

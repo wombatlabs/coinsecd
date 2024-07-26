@@ -1,6 +1,6 @@
 package server
 
-import "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+import "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 
 type walletUTXO struct {
 	Outpoint  *externalapi.DomainOutpoint

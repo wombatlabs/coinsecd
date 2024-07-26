@@ -4,14 +4,14 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/coinsec/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
 
-	"github.com/coinsec/coinsecd/infrastructure/db/database/ldb"
+	"github.com/wombatlabs/coinsecd/infrastructure/db/database/ldb"
 
-	"github.com/coinsec/coinsecd/infrastructure/db/database"
+	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
 
-	"github.com/coinsec/coinsecd/app"
-	"github.com/coinsec/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/app"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
 )
 
 type appHarness struct {

@@ -2,18 +2,18 @@ package main
 
 import (
 	nativeerrors "errors"
-	"github.com/coinsec/coinsecd/version"
+	"github.com/wombatlabs/coinsecd/version"
 	"math/rand"
 	"sync/atomic"
 	"time"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/cmd/coinsecminer/templatemanager"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/pow"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecminer/templatemanager"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/pow"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/util"
 	"github.com/pkg/errors"
 )
 

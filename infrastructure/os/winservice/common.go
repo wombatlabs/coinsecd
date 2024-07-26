@@ -1,6 +1,6 @@
 package winservice
 
-import "github.com/coinsec/coinsecd/infrastructure/config"
+import "github.com/wombatlabs/coinsecd/infrastructure/config"
 
 // ServiceDescription contains information about a service, needed to administer it
 type ServiceDescription struct {

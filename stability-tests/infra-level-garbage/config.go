@@ -4,9 +4,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/coinsec/coinsecd/infrastructure/config"
-	"github.com/coinsec/coinsecd/infrastructure/logger"
-	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/stability-tests/common"
 
 	"github.com/jessevdk/go-flags"
 )

@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/coinsec/coinsecd/infrastructure/db/database"
-	"github.com/coinsec/coinsecd/infrastructure/db/database/ldb"
+	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
+	"github.com/wombatlabs/coinsecd/infrastructure/db/database/ldb"
 )
 
 type databasePrepareFunc func(t *testing.T, testName string) (db database.Database, name string, teardownFunc func())

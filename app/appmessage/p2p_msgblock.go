@@ -5,7 +5,7 @@
 package appmessage
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // defaultTransactionAlloc is the default size used for the backing array

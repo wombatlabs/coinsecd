@@ -5,15 +5,15 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"github.com/coinsec/coinsecd/domain/consensusreference"
+	"github.com/wombatlabs/coinsecd/domain/consensusreference"
 
-	"github.com/coinsec/coinsecd/domain/consensus"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/miningmanager"
-	"github.com/coinsec/coinsecd/domain/miningmanager/mempool"
-	"github.com/coinsec/coinsecd/domain/prefixmanager"
-	"github.com/coinsec/coinsecd/domain/prefixmanager/prefix"
-	infrastructuredatabase "github.com/coinsec/coinsecd/infrastructure/db/database"
+	"github.com/wombatlabs/coinsecd/domain/consensus"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/miningmanager"
+	"github.com/wombatlabs/coinsecd/domain/miningmanager/mempool"
+	"github.com/wombatlabs/coinsecd/domain/prefixmanager"
+	"github.com/wombatlabs/coinsecd/domain/prefixmanager/prefix"
+	infrastructuredatabase "github.com/wombatlabs/coinsecd/infrastructure/db/database"
 	"github.com/pkg/errors"
 )
 

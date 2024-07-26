@@ -2,13 +2,13 @@ package netadapter
 
 import (
 	"fmt"
-	"github.com/coinsec/coinsecd/app/appmessage"
-	routerpkg "github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	routerpkg "github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 	"sync/atomic"
 
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/id"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/id"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server"
 )
 
 // NetConnection is a wrapper to a server connection for use by services external to NetAdapter

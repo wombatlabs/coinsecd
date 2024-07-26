@@ -1,10 +1,10 @@
 package mergedepthmanager
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
-	"github.com/coinsec/coinsecd/infrastructure/db/database"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
+	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
 	"github.com/pkg/errors"
 )
 

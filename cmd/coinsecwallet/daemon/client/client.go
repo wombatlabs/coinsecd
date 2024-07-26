@@ -2,12 +2,12 @@ package client
 
 import (
 	"context"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/server"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/server"
 	"time"
 
 	"github.com/pkg/errors"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
 	"google.golang.org/grpc"
 )
 

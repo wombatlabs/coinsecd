@@ -3,10 +3,10 @@ package blockprocessor
 import (
 	"time"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/processes/blockprocessor/blocklogger"
-	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/processes/blockprocessor/blocklogger"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
 )
 
 // blockProcessor is responsible for processing incoming blocks

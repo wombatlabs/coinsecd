@@ -1,8 +1,8 @@
 package common
 
 import (
-	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
-	routerpkg "github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
+	routerpkg "github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 	"time"
 
 	"github.com/pkg/errors"

@@ -7,17 +7,17 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/coinsec/coinsecd/infrastructure/config"
-	"github.com/coinsec/coinsecd/infrastructure/db/database"
-	"github.com/coinsec/coinsecd/infrastructure/db/database/ldb"
-	"github.com/coinsec/coinsecd/infrastructure/logger"
-	"github.com/coinsec/coinsecd/infrastructure/os/execenv"
-	"github.com/coinsec/coinsecd/infrastructure/os/limits"
-	"github.com/coinsec/coinsecd/infrastructure/os/signal"
-	"github.com/coinsec/coinsecd/infrastructure/os/winservice"
-	"github.com/coinsec/coinsecd/util/panics"
-	"github.com/coinsec/coinsecd/util/profiling"
-	"github.com/coinsec/coinsecd/version"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/infrastructure/db/database"
+	"github.com/wombatlabs/coinsecd/infrastructure/db/database/ldb"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/infrastructure/os/execenv"
+	"github.com/wombatlabs/coinsecd/infrastructure/os/limits"
+	"github.com/wombatlabs/coinsecd/infrastructure/os/signal"
+	"github.com/wombatlabs/coinsecd/infrastructure/os/winservice"
+	"github.com/wombatlabs/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/util/profiling"
+	"github.com/wombatlabs/coinsecd/version"
 )
 
 const (

@@ -1,7 +1,7 @@
 package connmanager
 
 import (
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
 )
 
 type connectionSet map[string]*netadapter.NetConnection

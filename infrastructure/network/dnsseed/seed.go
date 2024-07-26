@@ -12,15 +12,15 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	pb2 "github.com/coinsec/coinsecd/infrastructure/network/dnsseed/pb"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	pb2 "github.com/wombatlabs/coinsecd/infrastructure/network/dnsseed/pb"
 	"google.golang.org/grpc"
 
-	"github.com/coinsec/coinsecd/util/mstime"
+	"github.com/wombatlabs/coinsecd/util/mstime"
 
-	"github.com/coinsec/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
 )
 
 const (

@@ -2,12 +2,12 @@ package rpchandlers
 
 import (
 	"encoding/json"
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
-	"github.com/coinsec/coinsecd/app/rpc/rpccontext"
-	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
+	"github.com/wombatlabs/coinsecd/app/rpc/rpccontext"
+	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

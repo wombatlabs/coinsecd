@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
 )
 
 // Mempool maintains a set of known transactions that

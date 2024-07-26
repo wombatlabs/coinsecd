@@ -1,16 +1,16 @@
 package ping
 
 import (
-	"github.com/coinsec/coinsecd/app/protocol/common"
-	"github.com/coinsec/coinsecd/app/protocol/flowcontext"
+	"github.com/wombatlabs/coinsecd/app/protocol/common"
+	"github.com/wombatlabs/coinsecd/app/protocol/flowcontext"
 	"github.com/pkg/errors"
 	"time"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	peerpkg "github.com/coinsec/coinsecd/app/protocol/peer"
-	"github.com/coinsec/coinsecd/app/protocol/protocolerrors"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
-	"github.com/coinsec/coinsecd/util/random"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	peerpkg "github.com/wombatlabs/coinsecd/app/protocol/peer"
+	"github.com/wombatlabs/coinsecd/app/protocol/protocolerrors"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/util/random"
 )
 
 // SendPingsContext is the interface for the context needed for the SendPings flow.

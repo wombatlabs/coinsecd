@@ -6,9 +6,9 @@ FROM ${COINSECMINER_IMAGE} as coinsecminer
 
 FROM golang:1.19-alpine
 
-RUN mkdir -p /go/src/github.com/coinsec/coinsecd
+RUN mkdir -p /go/src/github.com/wombatlabs/coinsecd
 
-WORKDIR /go/src/github.com/coinsec/coinsecd
+WORKDIR /go/src/github.com/wombatlabs/coinsecd
 
 RUN apk add bash build-base git
 
@@ -23,7 +23,7 @@ COPY --from=coinsecd /app/ /app/
 COPY --from=coinsecminer /app/ /app/
 ENV PATH="/app:${PATH}"
 
-WORKDIR /go/src/github.com/coinsec/coinsecd/stability-tests
+WORKDIR /go/src/github.com/wombatlabs/coinsecd/stability-tests
 
 RUN go install ./...
 

@@ -6,7 +6,7 @@
 package app
 
 import (
-	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
 )
 
 var log = logger.RegisterSubSystem("SECD")

@@ -2,16 +2,16 @@ package main
 
 import (
 	"fmt"
-	"github.com/coinsec/coinsecd/version"
+	"github.com/wombatlabs/coinsecd/version"
 	"os"
 	"time"
 
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server/grpcserver/protowire"
 
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/encoding/protojson"
 
-	"github.com/coinsec/coinsecd/infrastructure/network/rpcclient/grpcclient"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/rpcclient/grpcclient"
 )
 
 func main() {

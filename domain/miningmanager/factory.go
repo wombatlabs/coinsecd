@@ -1,10 +1,10 @@
 package miningmanager
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensusreference"
-	"github.com/coinsec/coinsecd/domain/dagconfig"
-	"github.com/coinsec/coinsecd/domain/miningmanager/blocktemplatebuilder"
-	mempoolpkg "github.com/coinsec/coinsecd/domain/miningmanager/mempool"
+	"github.com/wombatlabs/coinsecd/domain/consensusreference"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/domain/miningmanager/blocktemplatebuilder"
+	mempoolpkg "github.com/wombatlabs/coinsecd/domain/miningmanager/mempool"
 	"sync"
 	"time"
 )

@@ -3,18 +3,18 @@ package consensushashing_test
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
 	"testing"
 
 	"github.com/kaspanet/go-secp256k1"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
-	"github.com/coinsec/coinsecd/domain/dagconfig"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/util"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // shortened versions of SigHash types to fit in single line of test case

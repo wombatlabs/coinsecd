@@ -3,9 +3,9 @@ package serialization
 import (
 	"math"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization/protoserialization"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization/protoserialization"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/proto"
 )

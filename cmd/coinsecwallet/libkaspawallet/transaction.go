@@ -1,13 +1,13 @@
 package libcoinsecwallet
 
 import (
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/bip32"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/bip32"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
+	"github.com/wombatlabs/coinsecd/util"
 	"github.com/pkg/errors"
 )
 

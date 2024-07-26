@@ -1,11 +1,11 @@
 package mempool
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
-	"github.com/coinsec/coinsecd/domain/miningmanager/mempool/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
+	"github.com/wombatlabs/coinsecd/domain/miningmanager/mempool/model"
 	"github.com/pkg/errors"
 )
 

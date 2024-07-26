@@ -8,20 +8,20 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/coinsec/coinsecd/version"
+	"github.com/wombatlabs/coinsecd/version"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 
-	"github.com/coinsec/coinsecd/util/txmass"
+	"github.com/wombatlabs/coinsecd/util/txmass"
 
-	"github.com/coinsec/coinsecd/util/profiling"
+	"github.com/wombatlabs/coinsecd/util/profiling"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/keys"
-	"github.com/coinsec/coinsecd/domain/dagconfig"
-	"github.com/coinsec/coinsecd/infrastructure/network/rpcclient"
-	"github.com/coinsec/coinsecd/infrastructure/os/signal"
-	"github.com/coinsec/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/keys"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/rpcclient"
+	"github.com/wombatlabs/coinsecd/infrastructure/os/signal"
+	"github.com/wombatlabs/coinsecd/util/panics"
 	"github.com/pkg/errors"
 
 	"google.golang.org/grpc"

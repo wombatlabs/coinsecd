@@ -1,8 +1,8 @@
 package addressmanager
 
 import (
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/util/mstime"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/util/mstime"
 	"net"
 	"reflect"
 	"testing"

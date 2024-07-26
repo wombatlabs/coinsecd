@@ -3,11 +3,11 @@ package libcoinsecwallet
 import (
 	"encoding/hex"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionid"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionid"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
 )
 
 // CoinsecwalletdUTXOsTolibcoinsecwalletUTXOs converts a  []*pb.UtxosByAddressesEntry to a []*libcoinsecwallet.UTXO

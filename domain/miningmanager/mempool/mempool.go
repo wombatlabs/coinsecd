@@ -3,15 +3,15 @@ package mempool
 import (
 	"sync"
 
-	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
 	"github.com/pkg/errors"
 
-	"github.com/coinsec/coinsecd/domain/consensusreference"
+	"github.com/wombatlabs/coinsecd/domain/consensusreference"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	miningmanagermodel "github.com/coinsec/coinsecd/domain/miningmanager/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	miningmanagermodel "github.com/wombatlabs/coinsecd/domain/miningmanager/model"
 )
 
 type mempool struct {

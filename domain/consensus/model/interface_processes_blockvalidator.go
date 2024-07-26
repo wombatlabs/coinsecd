@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // BlockValidator exposes a set of validation classes, after which

@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/client"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/client"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
 )
 
 func getDaemonVersion(conf *getDaemonVersionConfig) error {

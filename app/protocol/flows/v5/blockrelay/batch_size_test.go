@@ -1,7 +1,7 @@
 package blockrelay
 
 import (
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 	"testing"
 )
 

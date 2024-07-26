@@ -3,21 +3,21 @@ package server
 import (
 	"testing"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/serialization"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/keys"
-	"github.com/coinsec/coinsecd/util/txmass"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/keys"
+	"github.com/wombatlabs/coinsecd/util/txmass"
 
-	"github.com/coinsec/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/consensushashing"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/consensushashing"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/coinsec/coinsecd/domain/consensus"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/wombatlabs/coinsecd/domain/consensus"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
 )
 
 func TestEstimateMassAfterSignatures(t *testing.T) {

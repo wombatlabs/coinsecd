@@ -2,7 +2,7 @@ package utxoindex
 
 import (
 	"encoding/binary"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 	"io"
 	"math/rand"

@@ -1,18 +1,18 @@
 package blockvalidator_test
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model/testapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/testapi"
 	"reflect"
 	"runtime"
 	"testing"
 
-	"github.com/coinsec/coinsecd/domain/consensus"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/blockheader"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/testutils"
-	"github.com/coinsec/coinsecd/util/mstime"
+	"github.com/wombatlabs/coinsecd/domain/consensus"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/blockheader"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/testutils"
+	"github.com/wombatlabs/coinsecd/util/mstime"
 	"github.com/pkg/errors"
 )
 

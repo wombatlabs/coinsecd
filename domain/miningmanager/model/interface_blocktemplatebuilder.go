@@ -1,7 +1,7 @@
 package model
 
 import (
-	consensusexternalapi "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	consensusexternalapi "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
 
 // BlockTemplateBuilder builds block templates for miners to consume

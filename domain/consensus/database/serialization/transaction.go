@@ -3,7 +3,7 @@ package serialization
 import (
 	"math"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 

@@ -3,12 +3,12 @@ package consensushashing
 import (
 	"io"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/serialization"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/serialization"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/hashes"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionhelper"
-	"github.com/coinsec/coinsecd/util/binaryserializer"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashes"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionhelper"
+	"github.com/wombatlabs/coinsecd/util/binaryserializer"
 	"github.com/pkg/errors"
 )
 

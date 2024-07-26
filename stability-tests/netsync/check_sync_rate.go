@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/coinsec/coinsecd/stability-tests/common/rpc"
+	"github.com/wombatlabs/coinsecd/stability-tests/common/rpc"
 
 	"github.com/pkg/errors"
 )

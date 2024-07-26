@@ -3,8 +3,8 @@ package libcoinsecwallet
 import (
 	"fmt"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/bip32"
-	"github.com/coinsec/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/bip32"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
 	"github.com/pkg/errors"
 	"github.com/tyler-smith/go-bip39"
 )

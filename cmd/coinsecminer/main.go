@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/util"
 
-	"github.com/coinsec/coinsecd/version"
+	"github.com/wombatlabs/coinsecd/version"
 
 	"github.com/pkg/errors"
 
 	_ "net/http/pprof"
 
-	"github.com/coinsec/coinsecd/infrastructure/os/signal"
-	"github.com/coinsec/coinsecd/util/panics"
-	"github.com/coinsec/coinsecd/util/profiling"
+	"github.com/wombatlabs/coinsecd/infrastructure/os/signal"
+	"github.com/wombatlabs/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/util/profiling"
 )
 
 func main() {

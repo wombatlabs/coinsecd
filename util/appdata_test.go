@@ -12,7 +12,7 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/util"
 )
 
 // TestAppDataDir tests the API for AppDir to ensure it gives expected

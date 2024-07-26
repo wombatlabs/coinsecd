@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/infrastructure/logger"
-	"github.com/coinsec/coinsecd/infrastructure/network/rpcclient"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/rpcclient"
 	"github.com/pkg/errors"
 	"time"
 )

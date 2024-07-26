@@ -12,10 +12,10 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/utils"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/utils"
 
-	"github.com/coinsec/coinsecd/domain/dagconfig"
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/util"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/argon2"
 	"golang.org/x/crypto/chacha20poly1305"

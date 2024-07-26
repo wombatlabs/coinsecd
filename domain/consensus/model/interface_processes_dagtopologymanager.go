@@ -1,6 +1,6 @@
 package model
 
-import "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+import "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 
 // DAGTopologyManager exposes methods for querying relationships
 // between blocks in the DAG

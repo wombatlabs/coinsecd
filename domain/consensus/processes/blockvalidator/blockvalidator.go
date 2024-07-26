@@ -4,11 +4,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/coinsec/coinsecd/util/txmass"
+	"github.com/wombatlabs/coinsecd/util/txmass"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/util/difficulty"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/util/difficulty"
 )
 
 // blockValidator exposes a set of validation classes, after which

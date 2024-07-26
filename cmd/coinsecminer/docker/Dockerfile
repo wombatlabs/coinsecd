@@ -1,9 +1,9 @@
 # -- multistage docker build: stage #1: build stage
 FROM golang:1.19-alpine AS build
 
-RUN mkdir -p /go/src/github.com/coinsec/coinsecd
+RUN mkdir -p /go/src/github.com/wombatlabs/coinsecd
 
-WORKDIR /go/src/github.com/coinsec/coinsecd
+WORKDIR /go/src/github.com/wombatlabs/coinsecd
 
 RUN apk add --no-cache curl git openssh binutils gcc musl-dev
 
@@ -14,7 +14,7 @@ RUN go mod download
 
 COPY . .
 
-WORKDIR /go/src/github.com/coinsec/coinsecd/cmd/coinsecminer
+WORKDIR /go/src/github.com/wombatlabs/coinsecd/cmd/coinsecminer
 RUN GOOS=linux go build -a -installsuffix cgo -o coinsecminer .
 
 # --- multistage docker build: stage #2: runtime image
@@ -23,7 +23,7 @@ WORKDIR /app
 
 RUN apk add --no-cache ca-certificates tini
 
-COPY --from=build /go/src/github.com/coinsec/coinsecd/cmd/coinsecminer/coinsecminer /app/
+COPY --from=build /go/src/github.com/wombatlabs/coinsecd/cmd/coinsecminer/coinsecminer /app/
 
 USER nobody
 ENTRYPOINT [ "/sbin/tini", "--" ]

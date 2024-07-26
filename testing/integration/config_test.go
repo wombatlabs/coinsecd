@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coinsec/coinsecd/domain/dagconfig"
-	"github.com/coinsec/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
 )
 
 const (

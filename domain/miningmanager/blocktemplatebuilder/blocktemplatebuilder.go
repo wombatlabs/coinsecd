@@ -1,20 +1,20 @@
 package blocktemplatebuilder
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/processes/coinbasemanager"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/merkle"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionhelper"
-	"github.com/coinsec/coinsecd/domain/consensusreference"
-	"github.com/coinsec/coinsecd/util/mstime"
+	"github.com/wombatlabs/coinsecd/domain/consensus/processes/coinbasemanager"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/merkle"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionhelper"
+	"github.com/wombatlabs/coinsecd/domain/consensusreference"
+	"github.com/wombatlabs/coinsecd/util/mstime"
 	"math"
 	"sort"
 
-	"github.com/coinsec/coinsecd/util/difficulty"
+	"github.com/wombatlabs/coinsecd/util/difficulty"
 
-	consensusexternalapi "github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
-	miningmanagerapi "github.com/coinsec/coinsecd/domain/miningmanager/model"
+	consensusexternalapi "github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	miningmanagerapi "github.com/wombatlabs/coinsecd/domain/miningmanager/model"
 	"github.com/pkg/errors"
 )
 
@@ -151,7 +151,7 @@ func (btb *blockTemplateBuilder) BuildBlockTemplate(
 		if err != nil {
 			// mempool.RemoveInvalidTransactions might return errors in situations that are perfectly fine in this context.
 			// TODO: Once the mempool invariants are clear, this should be converted back `return nil, err`:
-			// https://github.com/coinsec/coinsecd/issues/1553
+			// https://github.com/wombatlabs/coinsecd/issues/1553
 			log.Criticalf("Error from mempool.RemoveInvalidTransactions: %+v", err)
 		}
 		// We can call this recursively without worry because this should almost never happen

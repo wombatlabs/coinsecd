@@ -6,11 +6,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/client"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/daemon/pb"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/keys"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/utils"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/client"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/daemon/pb"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/keys"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/utils"
 	"github.com/pkg/errors"
 )
 

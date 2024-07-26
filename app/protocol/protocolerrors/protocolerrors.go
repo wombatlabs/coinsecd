@@ -1,7 +1,7 @@
 package protocolerrors
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/ruleerrors"
+	"github.com/wombatlabs/coinsecd/domain/consensus/ruleerrors"
 	"github.com/pkg/errors"
 )
 

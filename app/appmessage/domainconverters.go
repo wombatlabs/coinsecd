@@ -5,14 +5,14 @@ import (
 	"github.com/pkg/errors"
 	"math/big"
 
-	"github.com/coinsec/coinsecd/domain/consensus/utils/blockheader"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/hashes"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/blockheader"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/hashes"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/subnetworks"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/transactionid"
-	"github.com/coinsec/coinsecd/util/mstime"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/subnetworks"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/transactionid"
+	"github.com/wombatlabs/coinsecd/util/mstime"
 )
 
 // DomainBlockToMsgBlock converts an externalapi.DomainBlock to MsgBlock

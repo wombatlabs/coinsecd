@@ -1,12 +1,12 @@
 package daa
 
 import (
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/pow"
-	"github.com/coinsec/coinsecd/domain/dagconfig"
-	"github.com/coinsec/coinsecd/infrastructure/network/rpcclient"
-	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/pow"
+	"github.com/wombatlabs/coinsecd/domain/dagconfig"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/rpcclient"
+	"github.com/wombatlabs/coinsecd/stability-tests/common"
 	"math"
 	"math/rand"
 	"os"

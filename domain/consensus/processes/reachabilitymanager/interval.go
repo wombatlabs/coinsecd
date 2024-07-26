@@ -1,7 +1,7 @@
 package reachabilitymanager
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
 	"github.com/pkg/errors"
 	"math"
 )

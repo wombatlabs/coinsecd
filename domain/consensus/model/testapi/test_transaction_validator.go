@@ -1,8 +1,8 @@
 package testapi
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/model"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/txscript"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/txscript"
 )
 
 // TestTransactionValidator adds to the main TransactionValidator methods required by tests

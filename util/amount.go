@@ -5,7 +5,7 @@
 package util
 
 import (
-	"github.com/coinsec/coinsecd/domain/consensus/utils/constants"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/constants"
 	"github.com/pkg/errors"
 	"math"
 	"strconv"

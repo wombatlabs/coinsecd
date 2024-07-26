@@ -4,13 +4,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/id"
-	mathUtil "github.com/coinsec/coinsecd/util/math"
-	"github.com/coinsec/coinsecd/util/mstime"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/id"
+	mathUtil "github.com/wombatlabs/coinsecd/util/math"
+	"github.com/wombatlabs/coinsecd/util/mstime"
 )
 
 // Peer holds data about a peer.

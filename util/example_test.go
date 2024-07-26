@@ -2,11 +2,11 @@ package util_test
 
 import (
 	"fmt"
-	"github.com/coinsec/coinsecd/util/difficulty"
+	"github.com/wombatlabs/coinsecd/util/difficulty"
 	"math"
 	"math/big"
 
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/util"
 )
 
 func ExampleAmount() {

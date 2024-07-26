@@ -4,22 +4,22 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 
-	"github.com/coinsec/coinsecd/domain/miningmanager/mempool"
+	"github.com/wombatlabs/coinsecd/domain/miningmanager/mempool"
 
-	"github.com/coinsec/coinsecd/app/protocol"
-	"github.com/coinsec/coinsecd/app/rpc"
-	"github.com/coinsec/coinsecd/domain"
-	"github.com/coinsec/coinsecd/domain/consensus"
-	"github.com/coinsec/coinsecd/domain/utxoindex"
-	"github.com/coinsec/coinsecd/infrastructure/config"
-	infrastructuredatabase "github.com/coinsec/coinsecd/infrastructure/db/database"
-	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
-	"github.com/coinsec/coinsecd/infrastructure/network/connmanager"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/id"
-	"github.com/coinsec/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/app/protocol"
+	"github.com/wombatlabs/coinsecd/app/rpc"
+	"github.com/wombatlabs/coinsecd/domain"
+	"github.com/wombatlabs/coinsecd/domain/consensus"
+	"github.com/wombatlabs/coinsecd/domain/utxoindex"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	infrastructuredatabase "github.com/wombatlabs/coinsecd/infrastructure/db/database"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/connmanager"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/id"
+	"github.com/wombatlabs/coinsecd/util/panics"
 )
 
 // ComponentManager is a wrapper for all the coinsecd services

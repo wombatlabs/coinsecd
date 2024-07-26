@@ -2,7 +2,7 @@ package profiling
 
 import (
 	"fmt"
-	"github.com/coinsec/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
 	"net"
 	"net/http"
 	"os"
@@ -12,7 +12,7 @@ import (
 	// Required for profiling
 	_ "net/http/pprof"
 
-	"github.com/coinsec/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/util/panics"
 	"runtime"
 	"runtime/pprof"
 )

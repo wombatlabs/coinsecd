@@ -3,16 +3,16 @@ package standalone
 import (
 	"sync"
 
-	"github.com/coinsec/coinsecd/app/protocol/common"
-	"github.com/coinsec/coinsecd/util/mstime"
+	"github.com/wombatlabs/coinsecd/app/protocol/common"
+	"github.com/wombatlabs/coinsecd/util/mstime"
 
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/id"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/id"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/router"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/router"
 
-	"github.com/coinsec/coinsecd/infrastructure/config"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
 
 	"github.com/pkg/errors"
 )

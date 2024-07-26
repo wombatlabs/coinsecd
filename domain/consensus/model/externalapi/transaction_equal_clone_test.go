@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/domain/consensus/utils/utxo"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/utils/utxo"
 )
 
 // Changed fields of a test struct compared to a base test struct marked as "changed" and

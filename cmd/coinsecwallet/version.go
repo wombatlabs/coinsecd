@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/coinsec/coinsecd/version"
+	"github.com/wombatlabs/coinsecd/version"
 	"os"
 	"path/filepath"
 	"strings"

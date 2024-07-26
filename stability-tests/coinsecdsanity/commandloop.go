@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/coinsec/coinsecd/infrastructure/logger"
-	"github.com/coinsec/coinsecd/stability-tests/common"
+	"github.com/wombatlabs/coinsecd/infrastructure/logger"
+	"github.com/wombatlabs/coinsecd/stability-tests/common"
 	"github.com/pkg/errors"
 )
 

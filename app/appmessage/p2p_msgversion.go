@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
-	"github.com/coinsec/coinsecd/version"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/version"
 
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/id"
-	"github.com/coinsec/coinsecd/util/mstime"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/id"
+	"github.com/wombatlabs/coinsecd/util/mstime"
 )
 
 // MaxUserAgentLen is the maximum allowed length for the user agent field in a

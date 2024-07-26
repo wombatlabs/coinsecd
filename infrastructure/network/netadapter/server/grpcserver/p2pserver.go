@@ -2,9 +2,9 @@ package grpcserver
 
 import (
 	"context"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter/server/grpcserver/protowire"
-	"github.com/coinsec/coinsecd/util/panics"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/wombatlabs/coinsecd/util/panics"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/encoding/gzip"

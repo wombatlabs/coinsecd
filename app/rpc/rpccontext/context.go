@@ -1,13 +1,13 @@
 package rpccontext
 
 import (
-	"github.com/coinsec/coinsecd/app/protocol"
-	"github.com/coinsec/coinsecd/domain"
-	"github.com/coinsec/coinsecd/domain/utxoindex"
-	"github.com/coinsec/coinsecd/infrastructure/config"
-	"github.com/coinsec/coinsecd/infrastructure/network/addressmanager"
-	"github.com/coinsec/coinsecd/infrastructure/network/connmanager"
-	"github.com/coinsec/coinsecd/infrastructure/network/netadapter"
+	"github.com/wombatlabs/coinsecd/app/protocol"
+	"github.com/wombatlabs/coinsecd/domain"
+	"github.com/wombatlabs/coinsecd/domain/utxoindex"
+	"github.com/wombatlabs/coinsecd/infrastructure/config"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/addressmanager"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/connmanager"
+	"github.com/wombatlabs/coinsecd/infrastructure/network/netadapter"
 )
 
 // Context represents the RPC context

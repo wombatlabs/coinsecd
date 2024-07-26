@@ -8,14 +8,14 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/coinsec/coinsecd/domain/consensus/model/externalapi"
+	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 
-	"github.com/coinsec/coinsecd/app/appmessage"
-	"github.com/coinsec/coinsecd/util/network"
+	"github.com/wombatlabs/coinsecd/app/appmessage"
+	"github.com/wombatlabs/coinsecd/util/network"
 
 	"github.com/pkg/errors"
 
-	"github.com/coinsec/coinsecd/util"
+	"github.com/wombatlabs/coinsecd/util"
 )
 
 // These variables are the DAG proof-of-work limit parameters for each default

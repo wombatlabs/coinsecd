@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/libcoinsecwallet/bip32"
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/utils"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/libcoinsecwallet/bip32"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/utils"
 	"github.com/pkg/errors"
 
-	"github.com/coinsec/coinsecd/cmd/coinsecwallet/keys"
+	"github.com/wombatlabs/coinsecd/cmd/coinsecwallet/keys"
 )
 
 func create(conf *createConfig) error {
