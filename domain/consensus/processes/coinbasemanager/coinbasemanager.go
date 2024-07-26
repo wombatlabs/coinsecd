@@ -18,6 +18,7 @@ type coinbaseManager struct {
 	preDeflationaryPhaseBaseSubsidy         uint64
 	coinbasePayloadScriptPublicKeyMaxLength uint8
 	genesisHash                             *externalapi.DomainHash
+	premineScore							uint64
 	deflationaryPhaseDaaScore               uint64
 	deflationaryPhaseBaseSubsidy            uint64
 
@@ -283,6 +284,7 @@ func New(
 	preDeflationaryPhaseBaseSubsidy uint64,
 	coinbasePayloadScriptPublicKeyMaxLength uint8,
 	genesisHash *externalapi.DomainHash,
+	PremineScore uint64,
 	deflationaryPhaseDaaScore uint64,
 	deflationaryPhaseBaseSubsidy uint64,
 
