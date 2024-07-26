@@ -28,7 +28,7 @@ func TestAmountCreation(t *testing.T) {
 		},
 		{
 			name:     "max producible",
-			amount:   29e9,
+			amount:   1e9,
 			valid:    true,
 			expected: Amount(constants.MaxSompi),
 		},
