@@ -279,7 +279,7 @@ func New(
 	databaseContext model.DBReader,
 
 	subsidyGenesisReward uint64,
-	SubsidyPremineReward uint64,
+	subsidyPremineReward uint64,
 	preDeflationaryPhaseBaseSubsidy uint64,
 	coinbasePayloadScriptPublicKeyMaxLength uint8,
 	genesisHash *externalapi.DomainHash,
