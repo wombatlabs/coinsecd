@@ -1,6 +1,7 @@
 package ghostdagdatastore
 
 import (
+	"fmt"
 	"github.com/wombatlabs/coinsecd/domain/consensus/model"
 	"github.com/wombatlabs/coinsecd/domain/consensus/model/externalapi"
 )
