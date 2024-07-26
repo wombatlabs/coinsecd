@@ -11,7 +11,7 @@ type key struct {
 	isTrustedData bool
 }
 
-func newKey(hash *externalapi.DomainHash, isTrustedData bool) key {
+func newKey(hash *externalapi.DomainHash, isTrustedData bool) (key, error) {
 	if hash == nil || isTrustedData == false {
         return nil, fmt.Errorf("received nil parameter")
     } else {
