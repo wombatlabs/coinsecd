@@ -60,7 +60,8 @@ func (gds *ghostdagDataStore) Get(dbContext model.DBReader, stagingArea *model.S
 		return blockGHOSTDAGData, nil
 	}
 
-	blockGHOSTDAGDataBytes, err := dbContext.Get(gds.serializeKey(key))
+	serializedKey := gds.serializeKey(key)
+	blockGHOSTDAGDataBytes, err := dbContext.Get(serializedKey)
 	if err != nil {
 		return nil, err
 	}
@@ -69,6 +70,7 @@ func (gds *ghostdagDataStore) Get(dbContext model.DBReader, stagingArea *model.S
 	if err != nil {
 		return nil, err
 	}
+
 	gds.cache.Add(blockHash, isTrustedData, blockGHOSTDAGData)
 	return blockGHOSTDAGData, nil
 }
